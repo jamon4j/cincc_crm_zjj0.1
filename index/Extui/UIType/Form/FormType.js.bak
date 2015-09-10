@@ -1,0 +1,31 @@
+﻿Ext.define('Extui.UIType.Form.FormType', {
+	
+		extend :  'Ext.form.Panel',
+			
+		frame:true,
+		
+		
+		defaults:{
+				xtype : "textfield",
+				labelAlign  : 'right',
+				labelWidth:100,
+				columnWidth:.5,
+				padding:3
+		},
+			  				
+		bbar:[
+			'->',
+			{	
+				xtype   : 'button',
+				text    : '修改',
+				itemId	: 'modify',                   
+			},'-',		
+			{
+			
+				xtype   : 'button',
+				text    : '取消',
+				itemId  : 'cancel'  
+
+		}]
+	
+});

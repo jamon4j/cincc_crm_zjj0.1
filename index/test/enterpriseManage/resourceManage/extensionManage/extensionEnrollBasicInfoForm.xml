@@ -1,0 +1,11 @@
+title   : "基本信息",
+
+type    :   "FormType2",
+
+file    : "extensionEnrollBasicInfoFormItem.xml",
+
+width:400,
+
+labelWidth:80,
+
+

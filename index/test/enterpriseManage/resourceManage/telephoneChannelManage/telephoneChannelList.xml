@@ -1,0 +1,47 @@
+title:"话路列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{
+        
+        db      : "WinControl telephoneChannelDetailForm.xml",        
+                                
+        oper1   : "WinControl telephoneChannelEnrollForm.xml",        
+        
+        oper3   : "WinControl telephoneChannelModifyForm.xml",
+
+        oper7   : "WinControl telephoneChannelBatchModifyForm.xml",
+},
+
+queryfile       :"telephoneChannelQueryItem.xml",
+
+columnfile      :"telephoneChannelColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'注册',
+            iconCls: 'add_node'
+        },
+        {
+            xtype: 'button',
+            itemId: 'oper2',
+            text:'批量删除',
+            iconCls: 'delete_node'
+        },
+        {
+            xtype: 'button',
+            itemId: 'oper7',
+            text:'批量修改',
+            iconCls: 'pencil_icon'
+        }
+    ]
+}
+
+

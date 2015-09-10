@@ -1,0 +1,14 @@
+title   : "运营管理员信息注册",
+
+type    :   "WinType3",
+
+file    : "operationManagerEnrollFormItem.xml",
+
+width:400,
+
+labelWidth:100,
+
+x:450,
+
+y:150
+

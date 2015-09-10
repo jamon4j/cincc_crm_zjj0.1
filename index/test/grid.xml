@@ -1,0 +1,17 @@
+﻿table:"kkkk",
+
+type:"GridType3",
+
+action:{
+    	
+		db		: "WinControl WinType ./test/item.xml ",		
+						    	
+    	oper1 : "WinControl WinType ./test/processitem.xml",		
+ 		
+    	oper3	:	"WinControl ./test/win.xml"
+    	
+},
+
+queryfile		:"./test/queryitem.xml",
+
+columnfile	:"./test/columnsitem.xml"

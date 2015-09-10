@@ -1,0 +1,31 @@
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{       
+    oper1   : "WinControl manualServiceSLThresholdAllotAddForm.xml", 
+    
+    oper11   : "WinControl manualServiceSLThresholdAllotAddForm.xml",                     
+},
+
+columnfile      :"manualServiceSLThresholdAllotColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'新增SL阀值分配',
+            iconCls: 'add_node'
+        },{
+            xtype: 'button',
+            itemId: 'oper2',
+            text:'批量删除',
+            iconCls: 'delete_node'
+        }
+    ]
+},
+
+width:800,

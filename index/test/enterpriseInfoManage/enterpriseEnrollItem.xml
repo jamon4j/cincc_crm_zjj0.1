@@ -1,0 +1,183 @@
+items:[
+            {// 行1           
+              fieldLabel:'企业编号',
+              name:'tr_corp_id',
+              itemId:'tr_corp_id',
+              allowBlank:false,
+              regex: /^\d{6}$/,
+              regexText: '必须为6位数字'            
+            },{
+              xtype: 'displayfield',            
+              value:'必须为6位数字',                  
+            },{// 行2              
+              fieldLabel:'企业名称',
+              name:'vccName',
+              itemId:'vccName',
+              allowBlank:false               
+            },{// 行3
+              fieldLabel:'企业显示号',
+              name:'displayNumber',
+              itemId:'displayNumber',
+              allowBlank:false 
+
+            },{// 行4
+              fieldLabel:'分机号码长度',
+              name:'command.acdVccContext.userNumberLen',
+              itemId:'command.acdVccContext.userNumberLen',
+              value:'8',
+              allowBlank:false                   
+            },{// 行5         
+              xtype:'combobox',
+              fieldLabel:'呼叫权限',
+              name:'command.acdVccContext.callRightId',
+              itemId:'command.acdVccContext.callRightId',
+              allowBlank:false                   
+            },{// 行8              
+              fieldLabel:'FTP登陆密码',
+              name:'command.ctiVccContext.ftpPwd',
+              itemId:'command.ctiVccContext.ftpPwd',
+              value:'123456',
+              allowBlank:false                    
+            },{
+              xtype: 'displayfield',            
+              value:'默认密码为123456',                  
+            },{// 行9
+              xtype:'radiogroup',
+              width:350,
+              label:'内部呼叫目标可配',
+              name:'command.ctiVccContext.confInnerCall',
+              itemId:'command.ctiVccContext.confInnerCall',
+              items: [
+                    {
+                        boxLabel  : '否',
+                        name      : 'command.ctiVccContext.confInnerCall',
+                        inputValue: 'n',
+                        checked: true,
+                        itemId    : 'no'
+                    }, {
+                        boxLabel  : '是',
+                        name      : 'command.ctiVccContext.confInnerCall',
+                        inputValue: 'y',
+                        itemId    : 'yes'
+                    }
+                ] ,
+              allowBlank:false                  
+            },{// 行10
+              xtype:'radiogroup',
+              width:350,
+              label:'根据坐席登陆IP匹配CTI/SIP服务器配置',
+              name:'command.ctiVccContext.confWithIp',
+              itemId:'command.ctiVccContext.confWithIp',
+              items: [
+                    {
+                        boxLabel  : '否',
+                        name      : 'command.ctiVccContext.confWithIp',
+                        inputValue: 'n',
+                        checked   : true,
+                        itemId    : 'no'
+                    }, {
+                        boxLabel  : '是',
+                        name      : 'command.ctiVccContext.confWithIp',
+                        inputValue: 'y',
+                        itemId    : 'yes'
+                    }
+                ],
+              allowBlank:false                 
+            },{// 行11              
+              fieldLabel:'最大呼叫数',
+              name:'command.acdVccContext.maxCallnum',
+              itemId:'command.acdVccContext.maxCallnum',
+              value:'0',
+              allowBlank:false                
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行12             
+              fieldLabel:'最大分机数',
+              name:'command.acdVccContext.maxpNpnum',
+              itemId:'command.acdVccContext.maxpNpnum',
+              value:'0',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行13             
+              fieldLabel:'最大IVR资源数',
+              name:'command.ctiVccContext.ivrMax',
+              itemId:'command.ctiVccContext.ivrMax',
+              value:'0',
+              allowBlank:false                   
+            },{// 行14              
+              fieldLabel:'最大座席注册数',
+              name:'command.acdVccContext.vccName',
+              itemId:'command.acdVccContext.vccName',
+              value:'0',
+              allowBlank:false                  
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行15             
+              fieldLabel:'最大座席并发数',
+              name:'command.ctiVccContext.agentLimit',
+              itemId:'command.ctiVccContext.agentLimit',
+              value:'0',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行16              
+              fieldLabel:'最大人工外呼并发数',
+              name:'command.ctiVccContext.humanTaskLimit',
+              itemId:'command.ctiVccContext.humanTaskLimit',
+              value:'10',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行17              
+              fieldLabel:'最大IVR外呼并发数',
+              name:'command.ctiVccContext.ivrTaskLimit',
+              itemId:'command.ctiVccContext.ivrTaskLimit',
+              value:'10',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行18              
+              fieldLabel:'最大多媒体会话并发数',
+              name:'command.ctiVccContext.mmSessionLimit',
+              itemId:'command.ctiVccContext.mmSessionLimit',
+              value:'500',
+              allowBlank:false                
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行19             
+              xtype:'combobox',
+              fieldLabel:'管理员类型',
+              name:'command.corpAdminInfo.adminCtx.roleId',
+              itemId:'command.corpAdminInfo.adminCtx.roleId',
+              allowBlank:false                   
+            },{// 行20              
+              fieldLabel:'登陆用户名',
+              name:'command.corpAdminInfo.adminCtx.loginName',
+              itemId:'command.corpAdminInfo.adminCtx.loginName',
+              value:'admin',
+              allowBlank:false                   
+            },{// 行21             
+              fieldLabel:'登陆密码',
+              name:'command.corpAdminInfo.adminCtx.loginPwd',
+              itemId:'command.corpAdminInfo.adminCtx.loginPwd',
+              value:'cinteam123',
+              allowBlank:false                 
+            },{
+              xtype: 'displayfield',            
+              value:'默认密码为cinteam123',                  
+            },{// 行22             
+              fieldLabel:'密码确认',
+              name:'command.corpAdminInfo.adminCtx.repeatPwd',
+              itemId:'command.corpAdminInfo.adminCtx.repeatPwd',
+              value:'cinteam123',
+              allowBlank:false                   
+            }
+]

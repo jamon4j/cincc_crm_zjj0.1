@@ -1,0 +1,36 @@
+﻿Ext.define('Extui.UIType.Panel.OrderPanel', {
+
+    extend: 'Ext.panel.Panel',
+    
+    title: '订单处理窗口',
+      
+		layout : {
+			type  : 'fit',
+		},
+		
+	  tbar : [
+
+				{
+					xtype   : 'button',
+					iconCls : 'add_node',
+					text    : '<font style=" font-weight:bold">处理</font>',	
+					
+					itemId  : 'winoper1'	
+				},
+				{
+					xtype   : 'button',
+					iconCls : 'add_node',
+					text    : '<font style=" font-weight:bold">审批</font>',	
+					
+					itemId  : 'winoper2'	
+				}
+		],
+			       
+    items: [
+        {
+        	xtype:'tabpanel',
+        	itemId:'tabpanel'  	
+        }
+    ]
+        
+});

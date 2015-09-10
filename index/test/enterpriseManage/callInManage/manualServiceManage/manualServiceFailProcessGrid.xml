@@ -1,0 +1,13 @@
+title   : "添加人工服务失败处理",
+
+type    :   "WinType5",
+
+file    : "manualServiceFailProcessGridItem.xml",
+
+width:600,
+
+x:350,
+
+y:100
+
+

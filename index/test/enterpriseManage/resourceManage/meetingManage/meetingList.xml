@@ -1,0 +1,22 @@
+title:"会议列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{
+        
+        db      : "WinControl meetingDetailForm.xml",        
+                                
+        oper1   : "WinControl meetingEnrollForm.xml",        
+        
+        oper3   : "WinControl meetingModifyForm.xml",
+
+        oper5   : "WinControl win.xml",
+},
+
+queryfile       :"meetingQueryItem.xml",
+
+columnfile      :"meetingColumnsItem.xml"

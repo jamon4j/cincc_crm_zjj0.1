@@ -1,0 +1,9 @@
+﻿/**
+ * Created by Wade on 2015/4/30.
+ */
+Ext.define('CINCC.store.Shortcut', {
+	extend: 'Ext.data.Store',
+	model: 'CINCC.model.Shortcut',
+	autoLoad: false,
+	proxy: {type: 'memory'}
+});

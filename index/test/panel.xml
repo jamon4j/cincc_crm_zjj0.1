@@ -1,0 +1,27 @@
+﻿title	:"this is demo",
+
+type	:"PanelType",
+
+panel:[{
+							
+				control	:	"OrderControl ./test/order.xml",		
+				init		:{
+						name	:1,
+						age		:12
+						}
+			},
+			{
+				control	:	"GridControl ./test/grid.xml",		
+				init		:{
+						name	:1,
+						age		:12
+						}
+			},						    	
+    	{
+				control	:	"GridControl ./test/grid.xml",		
+				
+				init		:{
+						name	:2,
+						age		:12
+						}
+			}]

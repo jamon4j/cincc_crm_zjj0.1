@@ -1,0 +1,11 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '话路号码',
+            name:'agtId',
+            itemId:'agtId',
+            columnWidth:.2,
+            regex: /^\d{6}$/,
+            regexText: '必须为6位数字'
+        }
+]

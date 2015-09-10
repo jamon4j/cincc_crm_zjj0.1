@@ -1,0 +1,47 @@
+﻿items:[
+
+            { // 行1
+              columnWidth : .2,
+              width:10,
+              xtype : 'radiogroup', 
+              fieldLabel : '业务表决',
+              name:'approval_status',
+              itemId:'approval_status',
+              vertical: true, 
+              items: [
+                    {
+                        boxLabel  : '等待',
+                        name      : 'approval_status',
+                        inputValue: 'h',
+                        checked: true,
+                        itemId        : 'high'
+                    }, {
+                        boxLabel  : '完毕',
+                        name      : 'approval_status',
+                        inputValue: 'm',
+                        itemId        : 'middle'
+                    }
+                ]
+             },{// 行2
+              columnWidth : 1,
+              xtype : "textarea",
+              fieldLabel:'审查意见',
+              name:'approval_content',
+              itemId:'approval_content'                 
+            },{// 行3
+              columnWidth : .3,
+              xtype:'textfield',  
+              fieldLabel:'审批人员',              
+              name:'approval_agent_name',
+              itemId:'approval_agent_name',
+              readOnly:true               
+            },{
+              columnWidth : .3,
+              xtype:'textfield',   
+              fieldLabel:'审批时间',                
+              name:'approval_created_time',
+              itemId:'approval_created_time',
+              readOnly:true                 
+            }
+]	
+

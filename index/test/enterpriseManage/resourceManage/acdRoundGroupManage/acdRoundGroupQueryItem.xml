@@ -1,0 +1,28 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '轮选组号码',
+            name:'agtId',
+            itemId:'agtId',
+            columnWidth:.2,
+            regex: /^\d{6}$/,
+            regexText: '必须为6位数字'
+        },{ 
+            xtype:'textfield',
+            fieldLabel:'轮选组范围:从',
+            labelWidth:80,
+            name:'',
+            itemId:'',
+            columnWidth:.2
+        },{ 
+            xtype:'textfield',
+            fieldLabel:'到',
+            labelWidth:20,
+            name:'',
+            itemId:'',
+            columnWidth:.15
+        },{
+            xtype:'displayfield',
+            columnWidth:0
+        }
+]

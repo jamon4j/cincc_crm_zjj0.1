@@ -1,0 +1,17 @@
+title   : "轮选组修改",
+
+type    :   "WinType3",
+
+file    : "acdRoundGroupModifyFormItem.xml",
+
+width   : 400,
+
+height: 100,
+
+labelWidth: 120,
+
+x:400,
+
+y:100
+
+

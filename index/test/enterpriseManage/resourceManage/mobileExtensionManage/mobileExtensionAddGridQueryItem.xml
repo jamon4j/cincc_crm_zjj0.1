@@ -1,0 +1,28 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '分机号码',
+            name:'agtId',
+            itemId:'agtId',
+            columnWidth:.4,
+            regex: /^\d{6}$/,
+            regexText: '必须为6位数字' 
+        },
+        {
+            xtype: 'combobox',
+            fieldLabel: '类型',
+            name:'agtName',
+            itemId:'agtName',
+            columnWidth:.3,                
+        },
+        { 
+            xtype: 'combobox',
+            fieldLabel : '状态',
+            name:'command.agtGrpId',
+            itemId:'agtGrpId',
+            editable : true,
+            displayField:'agtGrpName',
+            valueField:'agtGrpId',
+            columnWidth:.3,
+        }
+]

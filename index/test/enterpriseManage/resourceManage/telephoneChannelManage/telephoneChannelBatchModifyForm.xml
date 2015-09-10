@@ -1,0 +1,16 @@
+title   : "话路批量修改",
+
+type    :   "WinType3",
+
+file    : "telephoneChannelBatchModifyFormItem.xml",
+
+width   : 600,
+
+height: 180,
+
+labelWidth: 100,
+
+x:400,
+
+y:100
+

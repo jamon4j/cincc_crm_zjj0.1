@@ -1,0 +1,29 @@
+items:[
+        {
+          fieldLabel:'人工服务标识',
+          name:'',
+          itemId:'',
+          allowBlank:false                 
+        },{
+          xtype: 'displayfield',      
+          width:100                  
+        },{
+          fieldLabel:'服务水平阀值',
+          name:'',
+          itemId:'',
+          allowBlank:false                 
+        },{
+          xtype: 'displayfield',  
+          value:' 必须填写自然数！',    
+          width:100                  
+        },{
+          fieldLabel:'优先级',
+          name:'',
+          itemId:'',
+          allowBlank:false                 
+        },{
+          xtype: 'displayfield',  
+          value:' 必须填写自然数！',       
+          width:100                  
+        }
+]

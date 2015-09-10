@@ -1,0 +1,52 @@
+title:"分机列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{
+        
+        db      : "WinControl extensionDetailForm.xml",        
+                                
+        oper1   : "MWinControl extensionEnrollForm.xml",        
+        
+        oper3   : "WinControl extensionModifyForm.xml",
+
+        oper4   : "WinControl extensionBatchModfiyForm.xml"
+},
+
+queryfile       :"extensionQueryItem.xml",
+
+columnfile      :"extensionColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'注册',
+            iconCls: 'add_node'
+        },
+        {
+            xtype: 'button',
+            itemId: 'oper2',
+            text:'批量删除',
+            iconCls: 'delete_node'
+        },
+        {
+            xtype: 'button',
+            itemId: 'oper4',
+            text:'批量修改',
+            iconCls: 'pencil_icon'
+        }
+    ]
+}
+
+
+
+
+
+
+

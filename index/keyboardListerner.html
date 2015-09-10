@@ -1,0 +1,21 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript"> 
+       var cnt = 0;
+       document.onkeydown=function(event){ 
+             var e = event || window.event || arguments.callee.caller.arguments[0]; 
+            
+             if(e && e.keyCode==83 && event.ctrlKey){ // 按 Esc  
+                 //要做的事情 
+                    alert("按 ctrl + S"); 
+                    cnt++;
+               }
+               console.debug('ctrl+s 按了:' + cnt + '次');        
+         };  
+ </script> 
+</head> 
+<body> 
+
+</body> 
+</html>

@@ -1,0 +1,25 @@
+items : [{
+            header    : '分机号码',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '10%',
+        },{
+            header    : '分配状态',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '10%',
+        },{
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+                                                                                
+            itemId : 'oper4',
+                                                                                
+            width     : '10%',
+    
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

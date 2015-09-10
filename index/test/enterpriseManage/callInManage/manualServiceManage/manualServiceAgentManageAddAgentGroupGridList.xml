@@ -1,0 +1,18 @@
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{       
+                        
+},
+
+columnfile      :"manualServiceAgentManageAddAgentGroupColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        
+    ]
+},
+    

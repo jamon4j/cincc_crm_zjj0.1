@@ -1,0 +1,24 @@
+﻿Ext.define('Extui.Store.HisStore',{	
+	
+	extend: 'Ext.data.Store', 
+	
+	alias	:	'widget.hisstore',
+
+	fields: [
+				{
+					name: 'dbType',
+					type: 'string'
+				},{
+					name: 'agtGrpId',
+					type: 'string'
+				},{
+					name: 'agtGrpName',
+					type: 'string'
+				}
+			],	
+	
+	
+	sortInfo:{field:'agtGrpId',direction:"DESC"},
+				
+	autoLoad : false	
+});

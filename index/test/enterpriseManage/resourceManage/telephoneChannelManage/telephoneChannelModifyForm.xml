@@ -1,0 +1,16 @@
+title   : "话路修改",
+
+type    :   "WinType3",
+
+file    : "telephoneChannelModifyFormItem.xml",
+
+width   : 600,
+
+height: 200,
+
+labelWidth: 100,
+
+x:400,
+
+y:100
+

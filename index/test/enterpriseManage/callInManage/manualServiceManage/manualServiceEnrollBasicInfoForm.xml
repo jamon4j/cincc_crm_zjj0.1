@@ -1,0 +1,9 @@
+title   : "基本信息",
+
+type    :   "FormType2",
+
+file    : "manualServiceEnrollBasicInfoFormItem.xml",
+
+labelWidth:80,
+
+height:200

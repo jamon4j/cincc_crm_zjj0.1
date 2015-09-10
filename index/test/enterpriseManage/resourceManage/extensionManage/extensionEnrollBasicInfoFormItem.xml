@@ -1,0 +1,150 @@
+ items:[
+            {      
+              xtype:'radiogroup',
+              label:'注册类型',
+              width: 400,
+              name:'regType',
+              itemId:'regType',
+              items: [
+                    {
+                        boxLabel  : '单个注册',
+                        inputValue: '0',
+                        checked: true,
+                    }, {
+                        boxLabel  : '批量注册',
+                        inputValue: '1',
+                    }, {
+                        boxLabel  : '批量导入',
+                        inputValue: '2',
+                    }
+                ],
+              allowBlank:false         
+            },{           
+              fieldLabel:'分机号码',
+              name:'telephoneNumber',
+              itemId:'telephoneNumber',
+              allowBlank:false,
+              regex:/^[A-Za-z0-9]{1,}$/,
+              regexText:'只能是数字或字母'            
+            },{
+              xtype: 'displayfield',
+              name:'telephoneNumberBlank',
+              itemId:'telephoneNumberBlank',
+              width: 200, 
+              value:'1到？位数字或字母',                  
+            },{
+              fieldLabel:'起始分机号码',
+              name:'startTelephoneNumber',
+              itemId:'startTelephoneNumber',
+              allowBlank:false,
+              regex:/^[A-Za-z0-9]{1,}$/,
+              regexText:'只能是数字或字母',
+              hidden:true                 
+            },{
+              xtype: 'displayfield',
+              name:'startTelephoneNumberBlank',
+              itemId:'startTelephoneNumberBlank',            
+              value:'1到？位数字或字母', 
+              width: 200,
+              hidden:true                                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'批量注册数量',
+              name:'batchRegNumber',
+              itemId:'batchRegNumber',
+              allowBlank:false,
+              hidden:true                           
+            },{
+              xtype: 'displayfield',  
+              name:'batchRegNumberBlank',
+              itemId:'batchRegNumberBlank',          
+              value:'需填写1到4位有效数字,不能超过企业能拥有的最大分机数量',
+              hidden:true                                   
+            },{          
+              fieldLabel:'Excel文件',
+              name:'excelFile',
+              itemId:'excelFile',
+              allowBlank:false,
+              hidden:true                             
+            },{
+              name:'excelFilePath',
+              itemId:'excelFilePath',
+              xtype: 'button',
+              text:'浏览...',
+              width: 50,
+              hidden:true                                  
+            },{
+              name:'excelFileBlank',
+              itemId:'excelFileBlank',
+              xtype: 'displayfield',
+              value:'下载模板',
+              width: 150,
+              hidden:true                                  
+            },{   
+              xtype:'combobox',
+              fieldLabel:'分机类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'媒体类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'音频编解码',
+              name:'',
+              itemId:''                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'DTMF传输方式',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'拨号信息',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'分机终端类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              fieldLabel:'分机显示号',
+              name:'',
+              itemId:''                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'接续方式',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              fieldLabel:'接续号码',
+              name:'',
+              itemId:''               
+            },{
+              xtype: 'displayfield',
+              width: 200,                 
+            },
+],
+
+event:{
+    regType:
+    {
+        0:"visable(startTelephoneNumber,false);visable(startTelephoneNumberBlank,false);visable(excelFile,false);visable(excelFilePath,false);visable(excelFileBlank,false);visable(telephoneNumber,true);visable(telephoneNumberBlank,true);visable(batchRegNumber,false);visable(batchRegNumberBlank,false);",
+
+        1:"visable(startTelephoneNumber,true);visable(startTelephoneNumberBlank,true);visable(telephoneNumber,false);visable(telephoneNumberBlank,false);visable(batchRegNumber,true);visable(batchRegNumberBlank,true);visable(excelFile,false);visable(excelFilePath,false);visable(excelFileBlank,false);",
+
+        2:"visable(startTelephoneNumber,false);visable(startTelephoneNumberBlank,false);visable(telephoneNumber,false);visable(telephoneNumberBlank,false);visable(batchRegNumber,false);visable(batchRegNumberBlank,false);visable(excelFile,true);visable(excelFilePath,true);visable(excelFileBlank,true);"
+    },
+    excelFilePath:{
+          
+    }
+}

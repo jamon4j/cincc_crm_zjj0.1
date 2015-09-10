@@ -1,0 +1,54 @@
+items : [
+        {
+            header    : '企业标识',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '10%',
+        },
+        {
+            header    : '企业名称',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '15%',
+        },
+        {
+            header    : '企业显示号',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '10%',
+        },
+        {
+            header    : '企业状态',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },
+        {
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+            
+            itemId : 'oper3',
+                                                                                
+            width:'10%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },
+        {
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+                                                                                
+            itemId : 'oper4',
+                                                                                
+            width     : '10%',
+    
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

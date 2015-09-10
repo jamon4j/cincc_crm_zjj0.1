@@ -1,0 +1,30 @@
+﻿title	:	"历史记录",
+
+type	:	"HisPanel",
+
+store1:"Extui.Store.AgentStore",
+
+store2:"Extui.Store.AgentGroupStore",
+
+store3:"Extui.Store.HisStore",
+
+actions:{
+    	
+			db		: "modifyRecord",			
+    	oper5	:	"playRecord",
+    	oper3 : "dbAction"	
+},
+	
+orderform	:{
+
+	Reply		:"FormControl HisForm ./test/repeatitem.xml",
+	Repeat	:"FormControl HisForm ./test/processitem.xml"
+
+},
+
+orderwin	:{
+
+	Reply		:"WinControl WinType ./test/repeatitem.xml",
+	Repeat	:"WinControl WinType ./test/processitem.xml"
+}
+ 

@@ -1,0 +1,22 @@
+title:"轮选组列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{
+        
+        db      : "WinControl acdRoundGroupDetailForm.xml",        
+                                
+        oper1   : "WinControl acdRoundGroupEnrollForm.xml",        
+        
+        oper3   : "WinControl acdRoundGroupModifyForm.xml",
+
+        oper5   : "WinControl win.xml",
+},
+
+queryfile       :"acdRoundGroupQueryItem.xml",
+
+columnfile      :"acdRoundGroupColumnsItem.xml"

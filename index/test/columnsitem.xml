@@ -1,0 +1,130 @@
+﻿items : [
+				{
+					header    : '工号',
+					align  : 'center',
+					dataIndex : 'agtId',
+					width     : '10%',
+					renderer:function(value, cellMeta, record, rowIndex, columnIndex, store) 
+					{                  
+						var agtId= record.data['agtId'];      
+						return agtId.substring(12,agtId.length);
+					}  
+				},
+
+				{
+					header    : '员工姓名',
+					align  : 'center',
+					dataIndex : 'agtName',
+					width     : '15%',
+				},
+
+				{
+					header    : '团队标识',
+					align  : 'center',
+					dataIndex : 'vccId',
+					width     : '10%',
+				},
+
+				{
+					header    : '班组号',
+					align  : 'center',
+					dataIndex : 'agtGrpId',
+					width     : '10%',
+
+					renderer:function(value, cellMeta, record, rowIndex, columnIndex, store) 
+					{                  
+						var agtGrpId= record.data['agtGrpId'];      
+						return agtGrpId.substr(0,agtGrpId.length);
+					}  
+				},
+
+				{
+					header    : '班组名称',
+					align  : 'center',
+					dataIndex : 'agtGrpName',
+					width     : '10%',
+				},
+
+				{
+					header    : '角色',
+					align  : 'center',
+					dataIndex : 'agtRole',
+					width     : '10%',
+					renderer:function(value, cellMeta, record, rowIndex, columnIndex, store) 
+					{
+						var role= record.data['agtRole'];  
+						var result='';
+						switch(role)
+						{
+							case '1' :
+								result='普通员工';
+								break;
+							case '2' :
+								result='VP';
+								break;
+						  case '3':
+						  	result = '总经理';
+						  	break;
+							default :
+								result='其他'; 
+								break;
+						}	
+						return result;
+					} 
+				},
+				
+				{
+					header    : '节点',
+					align  : 'center',
+					dataIndex : 'ccNodeId',
+					width     : '15%',
+					renderer:function(value, cellMeta, record, rowIndex, columnIndex, store) 
+					{
+						var ccNodeId= record.data['ccNodeId'];  
+						var result='';
+						switch(ccNodeId)
+						{
+							case '10' :
+								result='176节点';
+								break;
+							case '11' :
+								result='136节点';
+								break;
+							default :
+								result=ccNodeId; 
+								break;
+						}	
+						return result;
+					}
+				},
+				{
+									header : '修改',
+									align  : 'center',
+									xtype  : 'actioncolumn',
+									
+									itemId : 'oper3',
+																										
+									width:'10%',
+
+									items  : [{
+																iconCls : 'pencil_icon',
+																tooltip : '修改'	
+ 									}]
+			},
+			{
+									header : '删除',
+									align  : 'center',
+									xtype  : 'actioncolumn',
+																										
+									itemId : 'oper4',
+																										
+									width     : '10%',
+							
+									items  : [{
+													iconCls : 'delete_node',
+													tooltip : '删除'
+									}]	
+			}
+				
+								
+]

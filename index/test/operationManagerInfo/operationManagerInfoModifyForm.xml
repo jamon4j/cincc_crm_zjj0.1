@@ -1,0 +1,15 @@
+title   : "运营管理员信息修改",
+
+type    :   "WinType3",
+
+file    : "operationManagerInfoModifyItem.xml",
+
+width   : 400,
+
+height: 230,
+
+labelWidth: 120,
+
+x:400,
+
+y:150

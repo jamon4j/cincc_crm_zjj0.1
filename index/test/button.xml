@@ -1,0 +1,57 @@
+﻿table :"zsb",
+
+addZsb:{
+					
+					additionItem:{
+					
+						streamNo	:	$streamNo,
+						type			:	'zsb',
+						
+						date			:	$currentTime
+					
+					},
+					
+					url:'zsb'
+			},
+			
+subZsb:{
+
+
+},
+
+						
+						
+
+
+
+actions:{
+
+	save:"add  modify",
+
+	modify:"update,modify",
+}
+
+
+addAction:{
+
+  zsb:{
+  				streamNO:$streamNo,
+  				type:"zsb,
+  				
+
+
+},
+
+delete:{
+
+},
+
+modify:{
+
+}
+
+query:{
+
+},
+
+

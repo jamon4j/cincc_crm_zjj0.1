@@ -1,0 +1,14 @@
+title   : "企业信息修改",
+
+type    :   "WinType3",
+
+file    : "enterpriseInfoModifyFormItem.xml",
+
+width   : 600,
+height: 300,
+
+labelWidth: 90,
+
+x:400,
+y:150
+

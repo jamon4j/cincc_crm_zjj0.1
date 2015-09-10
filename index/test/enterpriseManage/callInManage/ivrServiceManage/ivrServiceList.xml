@@ -1,0 +1,18 @@
+title:"ivr服务列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{      
+                                
+        oper1   : "WinControl ivrServiceEnrollForm.xml",        
+        
+        oper3   : "WinControl ivrServiceModifyForm.xml",
+},
+
+queryfile       :"ivrServiceQueryItem.xml",
+
+columnfile      :"ivrServiceColumnsItem.xml"

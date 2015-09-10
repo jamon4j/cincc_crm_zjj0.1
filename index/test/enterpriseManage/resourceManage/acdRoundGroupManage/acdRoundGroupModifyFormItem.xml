@@ -1,0 +1,11 @@
+items:[
+        {
+          fieldLabel:'轮选组号码',
+          name:'telephoneNumber',
+          itemId:'telephoneNumber',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                 
+        }
+],
+

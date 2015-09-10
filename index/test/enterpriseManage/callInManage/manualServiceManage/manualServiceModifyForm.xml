@@ -1,0 +1,27 @@
+title   : "人工服务修改",
+
+type    :   "MTWin1",
+
+panel:[
+                                 
+        {
+            control :   "FormControl manualServiceEnrollBasicInfoForm.xml",                   
+        },
+        {
+            control :   "FormControl manualServiceEnrolQueueAlertInfoForm.xml",                      
+        },
+        {
+            control :   "FormControl manualServiceModifyAdvancedInfoForm.xml",        
+            
+        }     
+],
+
+x:400,
+
+y:100,
+
+width:700,
+
+height:430
+
+

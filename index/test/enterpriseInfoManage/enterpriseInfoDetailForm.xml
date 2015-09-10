@@ -1,0 +1,14 @@
+title   : "企业信息详情",
+
+type    :   "WinType2",
+
+file    : "enterpriseInfoDetailFormItem.xml",
+
+width   : 600,
+height: 300,
+
+labelWidth: 130,
+
+x:400,
+y:150
+

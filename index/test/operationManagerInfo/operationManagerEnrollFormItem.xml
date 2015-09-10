@@ -1,0 +1,51 @@
+items:[
+        {
+          fieldLabel:'登陆用户名',
+          name:'corpStatus',
+          itemId:'corpStatus',
+          allowBlank:false                    
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{
+          fieldLabel:'登陆密码',
+          name:'displayNumber',
+          itemId:'displayNumber',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                 
+        },{
+          xtype: 'displayfield',            
+          value:'6-18位',
+          width:200                        
+        },{
+          fieldLabel:'密码确认',
+          name:'command.acdVccContext.userNumberLen',
+          itemId:'command.acdVccContext.userNumberLen',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                  
+        },{
+          xtype: 'displayfield',            
+          value:'6-18位',
+          width:200                  
+        },{           
+          fieldLabel:'姓名',
+          name:'',
+          itemId:'',                
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{           
+          fieldLabel:'联系电话',
+          name:'command.acdVccContext.maxpNpnum',
+          itemId:'command.acdVccContext.maxpNpnum',                
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{            
+          fieldLabel:'联系邮件',
+          name:'command.ctiVccContext.ivrMax',
+          itemId:'command.ctiVccContext.ivrMax'               
+        }
+]

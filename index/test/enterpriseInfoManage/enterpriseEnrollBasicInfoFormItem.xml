@@ -1,0 +1,94 @@
+ items:[
+        {// 行1           
+          fieldLabel:'企业编号',
+          labelWidth:120,
+          name:'tr_corp_id',
+          itemId:'tr_corp_id',
+          allowBlank:false,
+          regex: /^\d{6}$/, 
+          regexText: '必须为6位数字'                  
+        },{
+          xtype: 'displayfield',            
+          value:'必须为6位数字',                  
+        },{// 行2              
+          fieldLabel:'企业名称',
+          labelWidth:120,
+          name:'vccName',
+          itemId:'vccName',
+          allowBlank:false               
+        },{// 行3
+          fieldLabel:'企业显示号',
+          labelWidth:120,
+          name:'displayNumber',
+          itemId:'displayNumber',
+          allowBlank:false 
+        },{// 行4
+          fieldLabel:'分机号码长度',
+          labelWidth:120,
+          name:'command.acdVccContext.userNumberLen',
+          itemId:'command.acdVccContext.userNumberLen',
+          value:'8',
+          allowBlank:false                   
+        },{// 行5         
+          xtype:'combobox',
+          fieldLabel:'呼叫权限',
+          labelWidth:120,
+          name:'command.acdVccContext.callRightId',
+          itemId:'command.acdVccContext.callRightId',
+          allowBlank:false                   
+        },{// 行8              
+          fieldLabel:'FTP登陆密码',
+          labelWidth:120,
+          name:'command.ctiVccContext.ftpPwd',
+          itemId:'command.ctiVccContext.ftpPwd',
+          value:'123456',
+          allowBlank:false                    
+        },{
+          xtype: 'displayfield',            
+          value:'默认密码为123456',                  
+        },{// 行9
+          xtype:'radiogroup',
+          width:300,
+          labelWidth:120,
+          label:'内部呼叫目标可配',
+          name:'command.ctiVccContext.confInnerCall',
+          itemId:'command.ctiVccContext.confInnerCall',
+          items: [
+                {
+                    boxLabel  : '否',
+                    name      : 'command.ctiVccContext.confInnerCall',
+                    inputValue: 'n',
+                    checked: true,
+                    itemId    : 'no'
+                }, {
+                    boxLabel  : '是',
+                    name      : 'command.ctiVccContext.confInnerCall',
+                    inputValue: 'y',
+                    itemId    : 'yes'
+                }
+            ] ,
+          allowBlank:false                  
+        },{// 行10
+          xtype:'radiogroup',
+          width:300,
+          labelWidth:120,
+          label:'注册类型（兼容用）',
+          name:'command.ctiVccContext.confWithIp',
+          itemId:'command.ctiVccContext.confWithIp',
+          items: [
+                {
+                    boxLabel  : '新注册',
+                    name      : 'command.ctiVccContext.confWithIp',
+                    inputValue: 'n',
+                    checked   : true,
+                    itemId    : 'no'
+                }, {
+                    boxLabel  : '兼容模式',
+                    name      : 'command.ctiVccContext.confWithIp',
+                    inputValue: 'y',
+                    itemId    : 'yes'
+                }
+            ],
+          allowBlank:false                 
+        }
+]

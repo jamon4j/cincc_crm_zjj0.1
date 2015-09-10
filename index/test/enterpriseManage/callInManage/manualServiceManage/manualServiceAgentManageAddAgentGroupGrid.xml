@@ -1,0 +1,11 @@
+title   : "添加座席组",
+
+type    :   "WinType5", 
+
+file    : "manualServiceAgentManageAddAgentGroupGridItem.xml",
+
+width:400,
+
+x:450,
+
+y:100,

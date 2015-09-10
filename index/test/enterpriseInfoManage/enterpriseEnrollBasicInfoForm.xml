@@ -1,0 +1,7 @@
+title   : "基本信息",
+
+type    :  "FormType2",
+
+file    : "enterpriseEnrollBasicInfoFormItem.xml",
+
+labelWidth: 5,

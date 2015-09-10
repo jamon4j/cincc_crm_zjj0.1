@@ -1,0 +1,6 @@
+items:[
+    {
+        xtype:'gridcontrol',
+        grid:"test/enterpriseManage/resourceManage/mobileExtensionManage/mobileExtensionAddGridList.xml"
+    }
+]

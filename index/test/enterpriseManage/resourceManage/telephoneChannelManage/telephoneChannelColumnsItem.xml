@@ -1,0 +1,38 @@
+items : [{
+            header    : '话路号码',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '10%',
+        },{
+            header    : '媒体类型',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '15%',
+        },{
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+            
+            itemId : 'oper3',
+                                                                                
+            width:'10%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },{
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+                                                                                
+            itemId : 'oper4',
+                                                                                
+            width     : '10%',
+    
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

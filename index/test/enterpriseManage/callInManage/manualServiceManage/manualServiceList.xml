@@ -1,0 +1,26 @@
+title:"人工服务列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{ 
+                                
+        oper1   : "MWinControl manualServiceEnrollForm.xml",        
+        
+        oper3   : "MWinControl manualServiceModifyForm.xml",
+
+        oper6   : "WinControl manualServiceFailProcessGrid.xml",
+
+        oper7   : "WinControl manualServiceAgentManageGrid.xml", 
+
+        oper8   : "WinControl manualServiceSLThresholdAllotGrid.xml", 
+
+        oper9   : "WinControl manualServiceAgentStatusGrid.xml",
+},
+
+queryfile       :"manualServiceQueryItem.xml",
+
+columnfile      :"manualServiceColumnsItem.xml"

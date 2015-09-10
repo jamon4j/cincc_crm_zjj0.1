@@ -1,0 +1,77 @@
+items:[
+            {// 行11              
+              fieldLabel:'最大呼叫数',
+              labelWidth:130,
+              name:'command.acdVccContext.maxCallnum',
+              itemId:'command.acdVccContext.maxCallnum',
+              value:'0',
+              allowBlank:false                
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行12             
+              fieldLabel:'最大分机数',
+              labelWidth:130,
+              name:'command.acdVccContext.maxpNpnum',
+              itemId:'command.acdVccContext.maxpNpnum',
+              value:'0',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行13             
+              fieldLabel:'最大IVR资源数',
+              labelWidth:130,
+              name:'command.ctiVccContext.ivrMax',
+              itemId:'command.ctiVccContext.ivrMax',
+              value:'0',
+              allowBlank:false                   
+            },{// 行14              
+              fieldLabel:'最大座席注册数',
+              labelWidth:130,
+              name:'command.acdVccContext.vccName',
+              itemId:'command.acdVccContext.vccName',
+              value:'0',
+              allowBlank:false                  
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行15             
+              fieldLabel:'最大座席并发数',
+              labelWidth:130,
+              name:'command.ctiVccContext.agentLimit',
+              itemId:'command.ctiVccContext.agentLimit',
+              value:'0',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行16              
+              fieldLabel:'最大人工外呼并发数',
+              labelWidth:130,
+              name:'command.ctiVccContext.humanTaskLimit',
+              itemId:'command.ctiVccContext.humanTaskLimit',
+              value:'10',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行17              
+              fieldLabel:'最大IVR外呼并发数',
+              labelWidth:130,
+              name:'command.ctiVccContext.ivrTaskLimit',
+              itemId:'command.ctiVccContext.ivrTaskLimit',
+              value:'10',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',            
+              value:'0表示没有限制',                  
+            },{// 行18              
+              fieldLabel:'最大多媒体会话并发数',
+              labelWidth:130,
+              name:'command.ctiVccContext.mmSessionLimit',
+              itemId:'command.ctiVccContext.mmSessionLimit',
+              value:'500',
+              allowBlank:false                
+            }
+]

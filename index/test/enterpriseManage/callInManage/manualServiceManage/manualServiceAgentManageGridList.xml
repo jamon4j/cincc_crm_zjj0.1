@@ -1,0 +1,55 @@
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{ 
+    oper1   : "WinControl manualServiceAgentManageAddAgentGroupGrid.xml",
+
+    oper3   : "WinControl manualServiceAgentManageAddAgentGrid.xml",
+
+    oper11   : "WinControl manualServiceAgentManageDetailForm.xml",                           
+},
+
+columnfile      :"manualServiceAgentManageColumnsItem.xml",
+
+queryfile       :"manualServiceAgentManageQueryItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper2',
+            text:'删除座席',
+            iconCls: 'delete_node'
+        },{
+            xtype: 'button',
+            itemId: 'oper3',
+            text:'添加座席',
+            iconCls: 'add_node'
+        },{
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'添加座席组',
+            iconCls: 'add_node'
+        },{
+            xtype: 'button',
+            itemId: '',
+            text:'调整优先级'
+        },{
+            xtype: 'combobox',
+            itemId: 'priority',
+            width:50
+        },{
+            xtype: 'button',
+            itemId: '',
+            text:'是否参与分配'
+        },{
+            xtype: 'combobox',
+            itemId: 'isAllot',
+            width:50
+        }
+    ]
+},
+    

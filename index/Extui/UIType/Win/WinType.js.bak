@@ -1,0 +1,48 @@
+﻿Ext.define('Extui.UIType.Win.WinType', {
+	
+	extend :  'Ext.window.Window',
+	
+	title: '增加客户',
+
+	defaults : {
+		width:400,
+		margin: '20 20 0 10',				
+	},	
+	
+	modal:true,
+	
+	items : [
+	{
+
+		xtype:"form",
+						
+		defaults:{
+			frame:false,
+			anchor:'100%',
+			labelWidth:80
+
+		},
+		
+		items:[]
+		
+	}],
+	
+	bbar:[	
+			'->',
+			{
+			xtype   : 'button',
+			text    : '<font style=" font-weight:bold">提交</font>',
+			itemId	: 'save'    
+			},
+			
+			'-',
+			
+			{
+			
+			xtype   : 'button',
+			text    : '取消',
+			itemId  : 'cancel'      
+			}
+	]
+	
+});

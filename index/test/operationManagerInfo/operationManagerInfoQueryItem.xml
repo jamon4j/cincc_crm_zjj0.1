@@ -1,0 +1,9 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '企业',
+            labelWidth:50,
+            name:'',
+            itemId:''
+        }          
+]

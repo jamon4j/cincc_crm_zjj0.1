@@ -1,0 +1,12 @@
+items : [{
+            header    : '班组标识',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '50%',
+        },{
+            header    : '班组名称',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '43%',
+        }                      
+]

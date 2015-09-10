@@ -1,0 +1,40 @@
+items : [{
+            header    : '错误原因',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '20%',
+        },{
+            header    : '原因处理',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '20%',
+        },{
+            header    : '备注',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '20%',
+        },{
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',            
+            
+            itemId : 'oper11',                                                  
+            width:'17%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },{
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',                                                                                
+            width     : '18%',
+            itemId : 'oper10', 
+
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

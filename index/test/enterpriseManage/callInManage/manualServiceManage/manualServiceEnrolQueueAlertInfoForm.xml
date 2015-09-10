@@ -1,0 +1,9 @@
+title   : "排队/提醒音配置信息",
+
+type    :   "FormType2",
+
+file    : "manualServiceEnrolQueueAlertInfoFormItem.xml",
+
+labelWidth:100,
+
+

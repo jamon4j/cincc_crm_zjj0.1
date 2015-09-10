@@ -1,0 +1,14 @@
+title   : " 添加SL阀值分配",
+
+type    :   "WinType3",
+
+file    : "manualServiceSLThresholdAllotAddFormItem.xml",
+
+width:400,
+
+labelWidth:100,
+
+x:500,
+
+y:150
+

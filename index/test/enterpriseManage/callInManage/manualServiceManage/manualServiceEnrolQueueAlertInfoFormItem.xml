@@ -1,0 +1,32 @@
+ items:[
+            {   
+              xtype:'itemselector',
+              fieldLabel:'排队音',
+              width: 500,
+              name:'queueUpSound',
+              itemId:'queueUpSound',
+              displayField: 'text',
+              valueField: 'value',
+              value: ['3', '4'],
+              storeClass: 'Extui.Store.queueUpSoundStore',
+              msgTarget: 'side',  
+              fromTitle : '全部语音文件',
+              toTitle : '当前服务排队音' 
+          },
+          {   
+              xtype:'itemselector',
+              fieldLabel:'排队提醒音',
+              width: 500,
+              name:'queueUpAlertSound',
+              itemId:'queueUpAlertSound',
+              displayField: 'text',
+              valueField: 'value',
+              value: ['1', '2'],
+              storeClass: 'Extui.Store.queueUpSoundStore',
+              msgTarget: 'side',  
+              drawUpIcon : false,  
+              drawDownIcon : false, 
+              fromTitle : '全部语音文件',
+              toTitle : '当前服务排队提醒音' 
+          }
+],

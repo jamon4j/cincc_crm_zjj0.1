@@ -1,0 +1,50 @@
+items : [
+        {
+            header    : '企业标识',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '15%',
+        },
+        {
+            header    : '用户名',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },
+        {
+            header    : '用户角色',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '10%',
+        },
+        {
+            header    : '操作类型',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },
+        {
+            header    : '操作',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },
+        {
+            header    : '操作结果',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },
+        {
+            header    : '操作时间',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },
+        {
+            header    : '用户IP',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },                      
+]

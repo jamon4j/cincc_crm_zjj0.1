@@ -1,0 +1,16 @@
+title   : "话路注册",
+
+type    :   "WinType3",
+
+file    : "telephoneChannelEnrollFormItem.xml",
+
+width   : 600,
+
+height: 260,
+
+labelWidth: 100,
+
+x:400,
+
+y:100
+

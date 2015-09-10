@@ -1,0 +1,411 @@
+.add_node {
+	background: url(../images/icons/addnode.png) left center no-repeat !important;
+}
+
+.pencil_icon {
+	background: url(../images/icons/modifynode.png) left center no-repeat !important;
+}
+
+.modify_node {
+	background: url(../images/icons/modifynode.png) left center no-repeat !important;
+}
+
+.delete_node {
+	background: url(../images/icons/deletenode.png) left center no-repeat !important;
+}
+
+.refresh_node {
+	background: url(../images/icons/refresh.png) left center no-repeat !important;
+}
+
+.add_usr {
+	background: url(../images/icons/addUsr.png) left center no-repeat !important;
+}
+
+.modify_usr {
+	background: url(../images/icons/modifyUsr.png) left center no-repeat !important;
+}
+
+.delete_usr {
+	background: url(../images/icons/deleteUsr.png) left center no-repeat !important;
+}
+
+.refresh_usr {
+	background: url(../images/icons/refreshUsr.png) left center no-repeat !important;
+}
+
+.search_grid {
+	background: url(../images/icons/search.png) left center no-repeat !important;
+}
+
+.export_excel {
+	background: url(../images/icons/excel.png) left center no-repeat !important;
+}
+
+.export_pdf {
+	background: url(../images/icons/pdf.png) left center no-repeat !important;
+}
+
+.report_user {
+	background: url(../images/icons/user.png) left center no-repeat !important;
+}
+
+.report_sys {
+	background: url(../images/icons/sys.png) left center no-repeat !important;
+}
+
+.report_users {
+	background: url(../images/icons/users.png) left center no-repeat !important;
+}
+
+.report_usrList {
+	background: url(../images/icons/usrList.png) left center no-repeat !important;
+}
+
+.report_usrEdit {
+	background: url(../images/icons/user_edit.png) left center no-repeat !important;
+}
+
+.chart_icon {
+	background: url(../images/icons/column.png) left center no-repeat !important;
+}
+
+.grid_icon {
+	background: url(../images/icons/grid.png) left center no-repeat !important;
+}
+
+.import_node {
+	background: url(../images/icons/importnode.png) left center no-repeat !important;
+}
+
+.login_user {
+	background: url(../images/icons/login_user.png) right center no-repeat !important;
+}
+
+.login_password {
+	background: url(../images/icons/login_password.png) right center no-repeat !important;
+}
+
+.usr_info_change {
+	background: url(../images/icons/info_change.png) left center no-repeat !important;
+}
+
+.usr_info_exit {
+	background: url(../images/icons/info_exit.png) left center no-repeat !important;
+}
+
+.cati_icon {
+	background: url(../images/icons/cati.png) left center no-repeat !important;
+}
+
+.appoint_icon {
+	background: url(../images/icons/color.png) left center no-repeat !important;
+}
+
+.employee_message {
+	background: url(../images/icons/group.png) left center no-repeat !important;
+}
+
+.order_query {
+	background: url(../images/icons/appoint.png) left center no-repeat !important;
+}
+
+.audio_start {
+	background: url(../images/icons/cd_play.png) left center no-repeat !important;
+}
+
+.audio_stop {
+	background: url(../images/icons/cd_stop.png) left center no-repeat !important;
+}
+
+.check_query {
+	background: url(../images/icons/layout_content.png) left center no-repeat !important;
+}
+
+.detail_info {
+	background: url(../images/icons/table_cell.png) left center no-repeat !important;
+}
+
+.appoint_accept {
+	background: url(../images/icons/smartphone.png) left center no-repeat !important;
+}
+
+.wrench_orange {
+	background: url(../images/icons/wrench_orange.png) left center no-repeat !important;
+}
+
+.lock_go {
+	background: url(../images/icons/lock_go.png) left center no-repeat !important;
+}
+
+.out_call{
+	background: url(../images/icons/phone_sound.png) left center no-repeat !important;
+}
+
+.insp_icon {
+	background: url(../images/icons/insp.png) left center no-repeat !important;
+}
+
+.insp_edit {
+	background: url(../images/icons/edit.png) left center no-repeat !important;
+}
+
+.qulity_insp {
+	background: url(../images/icons/qulity_insp.png) left center no-repeat !important;
+}
+
+.ques_win {
+	background: url(../images/icons/script_edit.png) left center no-repeat !important;
+}
+
+.appoint_add {
+	background: url(../images/icons/clock_add.png) left center no-repeat !important;
+}
+
+.appoint_edit {
+	background: url(../images/icons/clock_edit.png) left center no-repeat !important;
+}
+
+.menu_icon {
+	background: url(../images/icons/house.png) left center no-repeat !important;
+}
+
+.tab_icon {
+	background: url(../images/icons/page.png) left center no-repeat !important;
+}
+
+.save_icon {
+	background: url(../images/icons/disk.png) left center no-repeat !important;
+}
+
+.show_win {
+	background: url(../images/icons/application_cascade.png) left center no-repeat !important;
+}
+
+.next_question {
+	background: url(../images/icons/control_fastforward.png) left center no-repeat !important;
+}
+
+.next_question:hover {
+	background: url(../images/icons/control_fastforward_blue.png) left center no-repeat !important;
+}
+
+.prve_question {
+	background: url(../images/icons/control_rewind.png) left center no-repeat !important;
+}
+
+.prve_question:hover {
+	background: url(../images/icons/control_rewind_blue.png) left center no-repeat !important;
+}
+
+.quit_question {
+	background: url(../images/icons/control_eject.png) left center no-repeat !important;
+}
+
+.quit_question:hover {
+	background: url(../images/icons/control_eject_blue.png) left center no-repeat !important;
+}
+
+.question_icon {
+	background: url(../images/icons/attach.png) left center no-repeat !important;
+}
+
+.questionnaire_icon {
+	background: url(../images/icons/table_edit.png) left center no-repeat !important;
+}
+
+.appoing_query {
+	background: url(../images/icons/time_go.png) left center no-repeat !important;
+}
+
+.order_query {
+	background: url(../images/icons/folder_magnify.png) left center no-repeat !important;
+}
+
+.insp_record {
+	background: url(../images/icons/thumb_up.png) left center no-repeat !important;
+}
+
+.insp_history {
+	background: url(../images/icons/folder_explore.png) left center no-repeat !important;
+}
+
+.login_submit {
+	background: url(../images/icons/tick.png) left center no-repeat !important;
+}
+
+.login_reset {
+	background: url(../images/icons/delete.png) left center no-repeat !important;
+}
+
+.track_view {
+	background: url(../images/icons/arrow_branch.png) left center no-repeat !important;
+}
+
+.export_data {
+	background: url(../images/icons/arrow_undo.png) left center no-repeat !important;
+}
+
+.order_callin {
+	background: url(../images/icons/application_side_expand.png) left center no-repeat !important;
+}
+
+.order_callout {
+	background: url(../images/icons/application_side_contract.png) left center no-repeat !important;
+}
+
+.common_query {
+	background: url(../images/icons/search.png) left center no-repeat !important;
+}
+
+.cust_info {
+	background: url(../images/icons/group.png) left center no-repeat !important;
+}
+
+.order_info {
+	background: url(../images/icons/database.png) left center no-repeat !important;
+}
+
+.order_opt {
+	background: url(../images/icons/database_edit.png) left center no-repeat !important;
+}
+
+.cust_add {
+	background: url(../images/icons/group_add.png) left center no-repeat !important;
+}
+
+.accept_add {
+	background: url(../images/icons/database_add.png) left center no-repeat !important;
+}
+
+.handle_add {
+	background: url(../images/icons/database_add.png) left center no-repeat !important;
+}
+
+.appval_add {
+	background: url(../images/icons/database_add.png) left center no-repeat !important;
+}
+
+.reply_add {
+	background: url(../images/icons/comment_add.png) left center no-repeat !important;
+}
+
+.login_back {
+	background: url(../images/icons/door_out.png) left center no-repeat !important;
+}
+
+.status_submit {
+	background: url(../images/icons/tick.png) left center no-repeat !important;
+}
+
+.status_reset {
+	background: url(../images/icons/delete.png) left center no-repeat !important;
+}
+
+
+.vccbar_setBusy {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/pen.png) left center no-repeat !important;
+}
+
+.vccbar_setIdle {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/finished_work.png) left center no-repeat !important;
+}
+
+.vccbar_callout {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/consulting.png) left center no-repeat !important;
+}
+
+.vccbar_hold {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/free_for_job.png) left center no-repeat !important;
+}
+
+.vccbar_retrieve {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/special_offer.png) left center no-repeat !important;
+}
+
+.vccbar_disconnect {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/contact.png) left center no-repeat !important;
+}
+
+.vccbar_transfer {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/refresh.png) left center no-repeat !important;
+}
+
+.vccbar_conference {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/customers.png) left center no-repeat !important;
+}
+
+.vccbar_answer {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/check.png) left center no-repeat !important;
+}
+
+.vccbar_transferOut {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/communication.png) left center no-repeat !important;
+}
+
+.vccbar_consult {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/feed2.png) left center no-repeat !important;
+}
+
+.vccbar_sendDtmf {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/refresh.png) left center no-repeat !important;
+}
+
+.vccbar_setBusy_menu {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/icons/attach.png) left center no-repeat !important;
+}
+
+.vccbar_monitor {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/networking.png) left center no-repeat !important;
+}
+
+.vccbar_setting {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/config.png) left center no-repeat !important;
+}
+
+.vccbar_exit {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/logout.png) left center no-repeat !important;
+}
+
+.vccbar_satisfactionBtn {
+	margin: 2px;
+	left: 12px;
+	background: url(../images/vccbar/star.png) left center no-repeat !important;
+}
+
+.login_icon {
+	background: url(images/cmcc.png) no-repeat !important;
+}
+

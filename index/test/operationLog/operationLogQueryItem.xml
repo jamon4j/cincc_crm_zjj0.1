@@ -1,0 +1,32 @@
+items:[
+        { 
+            xtype:'datefield',
+            fieldLabel:'操作日期:从',
+            name:'',
+            itemId:'',
+            columnWidth:.2,  
+            value:Ext.util.Format.date(Ext.Date.add(new Date(),Ext.Date.MONTH,0),"Y-m-d")  
+        },{ 
+            xtype:'datefield',
+            fieldLabel:'到',
+            labelWidth:20,
+            name:'',
+            itemId:'',
+            columnWidth:.15
+        },{
+            xtype:'displayfield',
+            columnWidth:0
+        },{ 
+            xtype:'textfield',
+            fieldLabel : '企业标识',
+            name:'',
+            itemId:'',
+            columnWidth:.2,        
+        },{ 
+            xtype:'combobox',
+            fieldLabel : '操作类型',
+            name:'',
+            itemId:'',
+            columnWidth:.2,        
+        }          
+]

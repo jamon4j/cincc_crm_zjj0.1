@@ -1,0 +1,27 @@
+title   : "人工服务注册",
+
+type    :   "MTWin1",
+
+panel:[
+                                 
+        {
+            control :   "FormControl manualServiceEnrollBasicInfoForm.xml",                   
+        },
+        {
+            control :   "FormControl manualServiceEnrolQueueAlertInfoForm.xml",                      
+        },
+        {
+            control :   "FormControl manualServiceEnrollAdvancedInfoForm.xml",        
+            
+        }     
+],
+
+x:300,
+
+y:60,
+
+width:700,
+
+height:480
+
+

@@ -1,0 +1,132 @@
+ items:[
+            {   
+              fieldLabel:'归属MS组号',
+              labelWidth:120,
+              name:'',
+              itemId:''                  
+            },{
+              xtype: 'displayfield',
+              width: 100,                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'SIP服务器',
+              labelWidth:120,
+              name:'',
+              itemId:'',
+              allowBlank:false, 
+              hidden:true          
+            },{   
+              fieldLabel:'无应答时长',
+              labelWidth:120,
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:0                   
+            },{
+              xtype: 'displayfield',            
+              value:'0到 90之间的数字（单位秒）',
+              width: 170                  
+            },{   
+              fieldLabel:'路由组',
+              labelWidth:120,
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:0                   
+            },{
+              xtype: 'displayfield',            
+              value:'须填写大于100000的数字',
+              width: 170                  
+            },{   
+              xtype:'combobox',
+              fieldLabel:'是否有热键功能',
+              labelWidth:120,
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',
+              width: 170       
+            },{   
+              fieldLabel:'鉴权用户名',
+              labelWidth:120,
+              name:'',
+              itemId:''                  
+            },{
+              xtype: 'displayfield',            
+              value:'如果为空,则默认为分机长号码',
+              width: 170 
+            },{   
+              fieldLabel:'鉴权用户密码',
+              labelWidth:120,
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:'00000000'                  
+            },{
+              xtype: 'displayfield',            
+              value:'默认为"00000000";如果为空,也默认为"00000000"',               
+            },{   
+              fieldLabel:'确认密码',
+              labelWidth:120,
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:'00000000'                    
+            },{
+              xtype: 'displayfield',            
+              value:'默认为"00000000";如果为空,也默认为"00000000"',                
+            },{   
+              fieldLabel:'计费号码',
+              labelWidth:120,
+              name:'',
+              itemId:''             
+            },{
+              xtype: 'displayfield',
+              width: 170       
+            },{           
+              fieldLabel:'行动分机号码',
+              labelWidth:120,
+              name:'',
+              itemId:'',               
+            },{
+              xtype: 'displayfield',
+              width: 170      
+            },{
+              fieldLabel:'无应答前转号码',
+              labelWidth:120,
+              name:'',
+              itemId:''
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            },{           
+              fieldLabel:'遇忙前转号码',
+              labelWidth:120,
+              name:'',
+              itemId:''               
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            },{
+              fieldLabel:'无条件前转号码',
+              labelWidth:120,
+              name:'',
+              itemId:''
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            },{
+              fieldLabel:'不在线呼叫转移号码',
+              labelWidth:120,
+              name:'',
+              itemId:''
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            }
+]

@@ -1,0 +1,135 @@
+ items:[
+            {           
+              fieldLabel:'分机号码',
+              name:'TelephoneNumber',
+              itemId:'TelephoneNumber',
+              allowBlank:false,
+              regex:/^[A-Za-z0-9]{1,}$/,
+              regexText:'只能是数字或字母'            
+            },{
+              xtype: 'displayfield',
+              name:'TelephoneNumberBlank',
+              itemId:'TelephoneNumberBlank',
+              width: 200, 
+              value:'1到？位数字或字母',                  
+            },{   
+              xtype:'combobox',
+              fieldLabel:'分机类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'媒体类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'音频编解码',
+              name:'',
+              itemId:''                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'DTMF传输方式',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'拨号信息',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'分机终端类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              fieldLabel:'分机显示号',
+              name:'',
+              itemId:''                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'接续方式',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              fieldLabel:'接续号码',
+              name:'',
+              itemId:''               
+            },{   
+              fieldLabel:'归属MS组号',
+              name:'',
+              itemId:''                  
+            },{   
+              xtype:'combobox',
+              fieldLabel:'SIP服务器',
+              name:'',
+              itemId:'',
+              allowBlank:false, 
+              hidden:true          
+            },{   
+              fieldLabel:'无应答时长',
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:0                   
+            },{
+              xtype: 'displayfield',            
+              value:'0到 90之间的数字（单位秒）',
+              width: 200                  
+            },{   
+              fieldLabel:'路由组',
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:0                   
+            },{
+              xtype: 'displayfield',            
+              value:'须填写大于100000的数字',
+              width: 200                 
+            },{   
+              xtype:'combobox',
+              fieldLabel:'是否有热键功能',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{
+              xtype: 'displayfield',
+              width: 200,                 
+            },{   
+              fieldLabel:'鉴权用户名',
+              name:'',
+              itemId:''                  
+            },{
+              xtype: 'displayfield',            
+              value:'如果为空,则默认为分机长号码',
+              width: 200                  
+            },{   
+              fieldLabel:'鉴权用户密码',
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:00000000                   
+            },{
+              xtype: 'displayfield',            
+              value:'默认为"00000000";如果为空,也默认为"00000000"',               
+            },{   
+              fieldLabel:'确认密码',
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:00000000                    
+            },{
+              xtype: 'displayfield',            
+              value:'默认为"00000000";如果为空,也默认为"00000000"',                
+            },{   
+              fieldLabel:'计费号码',
+              name:'',
+              itemId:''             
+            }
+],

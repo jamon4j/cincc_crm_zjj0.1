@@ -1,0 +1,68 @@
+items : [{
+            header    : '分机号码',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '10%',
+        },{
+            header    : '显示号码',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '10%',
+        },{
+            header    : '状态',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '10%',
+        },{
+            header    : '分机终端类型',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },{
+            header    : '注册状态',
+            align  : 'center',
+            dataIndex : '',
+            width     : '5%',
+        },{
+            header    : '注册ip',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },{
+            header    : '注册地址',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },{
+            header    : '解锁',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },{
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+            
+            itemId : 'oper3',
+                                                                                
+            width:'10%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },{
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+                                                                                
+            itemId : 'oper4',
+                                                                                
+            width     : '10%',
+    
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

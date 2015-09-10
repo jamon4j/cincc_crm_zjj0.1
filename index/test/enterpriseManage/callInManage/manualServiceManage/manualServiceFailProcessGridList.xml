@@ -1,0 +1,24 @@
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{       
+    oper1   : "WinControl manualServiceFailProcessAddForm.xml", 
+
+    oper11   : "WinControl manualServiceFailProcessModifyForm.xml",                        
+},
+
+columnfile      :"manualServiceFailProcessColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'添加人工服务失败处理',
+            iconCls: 'add_node'
+        }
+    ]
+}

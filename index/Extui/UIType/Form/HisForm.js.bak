@@ -1,0 +1,40 @@
+﻿Ext.define('Extui.UIType.Form.HisForm', {
+	
+	extend :  'Ext.form.Panel',                     //window.Window',
+		
+	frame:true,
+	
+	layout : {
+			type  : 'vbox',
+			align : 'stretch'/*'center' 'stretch'*/
+	},
+		
+	defaults  :{ 
+	 		anchor:'100%',
+			labelWidth:80,
+			
+	},
+	
+	closable  :true,
+	 						  
+	autoScroll:true
+
+	/*,	    				
+	bbar:[
+			'->',
+			{	
+				xtype   : 'button',
+				text    : '修改',
+				itemId	: 'modify',
+				vflage   : 1                      
+			},'-',		
+			{
+			
+				xtype   : 'button',
+				text    : '取消',
+				itemId  : 'cancel'  
+
+	}]
+ */	
+ 
+});

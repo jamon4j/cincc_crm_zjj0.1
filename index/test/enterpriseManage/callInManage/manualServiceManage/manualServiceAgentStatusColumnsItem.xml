@@ -1,0 +1,18 @@
+items : [
+        {
+            header    : '成员标识',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '30%',
+        },{
+            header    : '成员名称',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '30%',
+        },{
+            header    : '成员状态',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '40%',
+        }                         
+]

@@ -1,0 +1,15 @@
+title:"操作日志列表",
+
+table:"kkkk",
+
+type:"GridType4",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{     
+    
+},
+
+queryfile       :"operationLogQueryItem.xml",
+
+columnfile      :"operationLogColumnsItem.xml" 

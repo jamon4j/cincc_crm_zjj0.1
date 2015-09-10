@@ -1,0 +1,26 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '会议ID',
+            name:'agtId',
+            itemId:'agtId',
+            columnWidth:.2,
+            regex: /^\d{6}$/,
+            regexText: '必须为6位数字'
+        },{
+            xtype: 'textfield',
+            fieldLabel: '会议标题',
+            name:'agtName',
+            itemId:'agtName',
+            columnWidth:.2,                
+        },{ 
+            xtype: 'combobox',
+            fieldLabel : '会议状态',
+            name:'command.agtGrpId',
+            itemId:'agtGrpId',
+            editable : true,
+            displayField:'agtGrpName',
+            valueField:'agtGrpId',
+            columnWidth:.2,
+        } 
+]

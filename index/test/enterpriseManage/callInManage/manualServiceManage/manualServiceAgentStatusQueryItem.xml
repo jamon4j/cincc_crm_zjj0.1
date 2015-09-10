@@ -1,0 +1,9 @@
+items:[
+        { 
+            xtype:'combobox',
+            fieldLabel : '成员状态',
+            name:'agtId',
+            itemId:'agtId',
+            columnWidth:.4
+        }
+]

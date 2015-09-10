@@ -1,0 +1,51 @@
+items:[
+                { 
+                    xtype:'textfield',
+                    fieldLabel : '分机号码',
+                    name:'agtId',
+                    itemId:'agtId',
+                    columnWidth:.2,
+                    regex: /^\d{6}$/,
+                    regexText: '必须为6位数字'
+                },{
+                    xtype: 'textfield',
+                    fieldLabel: '显示号码',
+                    name:'agtName',
+                    itemId:'agtName',
+                    columnWidth:.2,                
+                },{
+                    xtype: 'displayfield',
+                    columnWidth:0.1,   
+                },{ 
+                    xtype: 'combobox',
+                    fieldLabel : '分机终端类型',
+                    labelWidth:90,
+                    name:'command.agtGrpId',
+                    itemId:'agtGrpId',
+                    editable : true,
+                    displayField:'agtGrpName',
+                    valueField:'agtGrpId',
+                    columnWidth:.2,
+                },{
+                    xtype: 'combobox',
+                    labelWidth:40,
+                    fieldLabel: '状态',
+                    name:'',
+                    itemId:'',
+                    columnWidth:.15,                
+                },{ 
+                    xtype:'textfield',
+                    fieldLabel:'分机号码范围 从',
+                    labelWidth:110,
+                    name:'',
+                    itemId:'',
+                    columnWidth:.2
+                },{ 
+                    xtype:'textfield',
+                    fieldLabel:'到',
+                    labelWidth:20,
+                    name:'',
+                    itemId:'',
+                    columnWidth:.15,        
+                }  
+]

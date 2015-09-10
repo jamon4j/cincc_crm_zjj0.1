@@ -1,0 +1,74 @@
+items : [
+        {
+            header    : '登陆用户名',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '15%',
+        },
+        {
+            header    : '姓名',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },
+        {
+            header    : '联系电话',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '10%',
+        },
+        {
+            header    : '联系邮件',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },
+        {
+            header    : '注册时间',
+            align  : 'center',
+            dataIndex : '',
+            width     : '10%',
+        },
+        {
+            header : '修改密码',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+            
+            itemId : 'oper5',
+                                                                                
+            width:'10%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },
+        {
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+            
+            itemId : 'oper3',
+                                                                                
+            width:'10%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },
+        {
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+                                                                                
+            itemId : 'oper4',
+                                                                                
+            width     : '10%',
+    
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

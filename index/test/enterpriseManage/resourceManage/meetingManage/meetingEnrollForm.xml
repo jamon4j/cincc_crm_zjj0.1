@@ -1,0 +1,16 @@
+title   : "会议注册",
+
+type    :  "WinType3",
+
+file    : "meetingEnrollFormItem.xml",
+
+width   : 450,
+
+height: 200,
+
+labelWidth: 100,
+
+x:400,
+
+y:100
+

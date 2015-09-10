@@ -1,0 +1,17 @@
+title   : "轮选组注册",
+
+type    :   "WinType3",
+
+file    : "acdRoundGroupEnrollFormItem.xml",
+
+width   : 600,
+
+height: 150,
+
+labelWidth: 120,
+
+x:400,
+
+y:100
+
+

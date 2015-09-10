@@ -1,0 +1,282 @@
+﻿table:"zsb",
+
+items:[
+
+	{
+		xtype:'textfield',
+		label:"姓名",
+		name:"agtName",		
+
+	},
+	
+	{
+      xtype: 'datefield',
+     	label:'出生日期',
+      name:'birthday'
+      
+   },
+	
+	{
+	
+		xtype:'linkdb',
+
+		number:1,
+		
+		label1:"一个选",
+
+		name1:"state",
+
+		url1		:"php/state.php",
+		
+	},
+
+	{
+	
+		xtype:'linkdb',
+		number:2,
+		
+		label1:"地区（数据库）",
+		name1:"state",
+		url1		:"php/state.php",
+		
+		label2:"城市（数据库）",
+		name2:"city",
+		url2	:"php/city1.php"
+		
+	},
+
+
+ {
+  	xtype:"link",
+  	
+  	number:1,
+  	
+  	label1:"单个选择（combobox）",
+
+		name1:"hell",
+		
+		data:[
+		
+			{id:1,text:"成功"},
+			
+			{id:2,text:"不成功"},
+							
+			{id:3,text:"未接触"}
+		]			
+		
+  },	
+   
+  {
+  	xtype:"link",
+  	
+  	number:2,
+  	
+  	label1:"成功（2link第一）",
+		name1:"success",
+		
+		label2:"原因",
+		name2:"reason",
+		
+		data:[
+		
+			{id:1,text:"成功",data:[]},
+			
+			{id:2,text:"不成功",data:[
+									{id:1,text:"不感兴趣"},
+									{id:2,text:"不好"},
+									{id:3,text:"讨厌"}
+							]},
+							
+			{id:3,text:"未接触",data:[
+									{id:1,text:"未接电话"},
+									{id:2,text:"拒绝"},
+									{id:3,text:"马上挂机"}
+							]}
+		]			
+		
+  },	
+  		
+  		
+	{
+		xtype:'link',
+		
+		number:3,
+		
+		label1:"类型",
+		name1:"ordertype",
+		
+		label2:"子类型",
+		name2:"ordersubtype",
+		
+		label3:"主题",
+		name3:"subject",
+
+		data:[
+		
+			{id:1,text:"主题1",data:[]},
+			
+			{id:2,text:"主题2",data:[
+									{id:1,text:"子21",data:[
+															{id:1,text:"sub211"},
+															{id:2,text:"sub212"}
+													]},
+								
+									{id:2,text:"子22",data:[
+															{id:1,text:"sub221"},
+															{id:2,text:"sub222"}
+													]}
+									]},
+							
+			{id:3,text:"主题3",data:[
+			
+									{id:1,text:"子31",data:[
+															{id:1,text:"sub311"},
+															{id:2,text:"sub312"}
+													]},
+								
+									{id:2,text:"子32",data:[
+															{id:1,text:"sub321"},
+															{id:2,text:"sub322"}
+													]}
+									]}
+			]
+
+	},
+    
+  {
+   
+       xtype : 'radiogroup',
+         
+       label:"VIP",    
+ 
+       name : 'vip', 
+ 
+       items: [
+                 {
+                     boxLabel  : '是',
+ 
+                     checked: true,
+ 
+ 
+                 }, 
+                 {
+                     boxLabel  : '否'
+                 }
+						]
+	}		
+		
+   
+],
+
+event:{
+
+	agtName:
+	{
+				zsb		:	"enable(birthday,true);visable(vip,false)",
+				
+				wyy		:	"enable(birthday,false);setValue(vip,1234);enable(vip,false)",
+				
+				default:	"enable(success,false)"
+		},
+			
+				
+	vip		:
+	{
+				"是"	:	"setValue(customer_name,zhsb)",
+
+				"否"	:	"total()"		
+	},
+	
+	birthday:		
+	{
+				1234	:	"total()"
+	}
+
+},					
+
+actions:{
+
+	saveAC:{
+					
+					addtionalItem:{
+					
+						streamNo	:	"$streamNo",
+						type			:	'zsb',
+						
+						date			:	"$currentTime",
+						
+					},
+					
+					tableItem:{
+					},
+					
+					conditonItem:{
+					},					
+					
+					url:'zsb'
+			},
+
+	updateAC:{
+					
+					additionItem:{
+					
+						streamNo	:	"$streamNo",
+						type			:	'zsb',
+						
+						date			:	"$currentTime"
+					
+					},
+
+					tableItem:{
+					},
+
+
+					conditonItem:{
+					},					
+					
+					url:'zsb'
+			},
+						
+
+	deleteAC:{
+					
+					additionItem:{
+					
+						streamNo	:	"$streamNo",
+						type			:	'zsb',
+						
+						date			:	"$currentTime"
+					
+					},
+
+					tableItem:{
+					},
+
+
+					conditionItem:{
+					},					
+					
+					url:'zsb'
+			},	
+			
+	queryAC:{
+					
+					additionItem:{
+					
+						streamNo	:	"$streamNo",
+						type			:	'zsb',
+						
+						date			:	"$currentTime"
+					
+					},
+
+					tableItem:{
+					},
+
+
+					conditonItem:{
+					},
+										
+					url:'zsb'
+			}
+}

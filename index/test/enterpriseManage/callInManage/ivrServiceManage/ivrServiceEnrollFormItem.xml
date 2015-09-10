@@ -1,0 +1,109 @@
+items:[
+        {
+          fieldLabel:'服务标识',
+          name:'corpStatus',
+          itemId:'corpStatus',
+          allowBlank:false,
+          regex: /^\d{1,10}$/, 
+          regexText: '必须为1到10位数字'                    
+        },{
+          xtype: 'displayfield', 
+          value:'须填写1到10位数字',           
+          width:200                  
+        },{
+          fieldLabel:'服务名称',
+          name:'displayNumber',
+          itemId:'displayNumber',
+          allowBlank:false                 
+        },{
+          xtype: 'displayfield',            
+          width:200                        
+        },{
+          xtype:'radiogroup',
+          width:280,
+          label:'脚本类型',
+          name:'scriptType',
+          itemId:'scriptType',
+          items: [
+                {
+                    boxLabel  : '已上传脚本',
+                    name      : '',
+                    inputValue: 'n',
+                    checked: true,
+                    itemId    : 'no'
+                }, {
+                    boxLabel  : '远程脚本',
+                    name      : '',
+                    inputValue: 'y',
+                    itemId    : 'yes'
+                }
+            ] ,
+          allowBlank:false                  
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{           
+          fieldLabel:'脚本地址',
+          name:'',
+          itemId:'', 
+          hidden:true,             
+        },{           
+          xtype:'combobox',
+          fieldLabel:'脚本列表',
+          name:'command.acdVccContext.maxpNpnum',
+          itemId:'command.acdVccContext.maxpNpnum',
+          allowBlank:false                     
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{            
+          xtype:'combobox',
+          fieldLabel:'日程',
+          name:'command.ctiVccContext.ivrMax',
+          itemId:'command.ctiVccContext.ivrMax'               
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{   
+            xtype:'itemselector',
+            fieldLabel:'节假日',
+            width: 400,
+            name:'holiday',
+            itemId:'holiday',
+            displayField: 'text',
+            valueField: 'value',
+            value: ['1', '2'],
+            storeClass: 'Extui.Store.HolidayStore',
+            msgTarget: 'side',  
+            fromTitle : '提供服务的节假日',
+            toTitle : '不提供服务的节假日' 
+        },{
+              xtype:'radiogroup',
+              width:220,
+              label:'音视频类型',
+              name:'command.ctiVccContext.confInnerCall',
+              itemId:'command.ctiVccContext.confInnerCall',
+              items: [
+                    {
+                        boxLabel  : '音频',
+                        name      : '',
+                        inputValue: 'n',
+                        checked: true,
+                        itemId    : 'no'
+                    }, {
+                        boxLabel  : '视频',
+                        name      : '',
+                        inputValue: 'y',
+                        itemId    : 'yes'
+                    }
+                ] ,
+              allowBlank:false                  
+            },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{            
+          fieldLabel:'简短说明',
+          name:'',
+          itemId:''               
+        }
+]

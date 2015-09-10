@@ -1,0 +1,23 @@
+items : [
+        {
+            header    : '分机号码',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '20%',
+        },{
+            header    : '显示号码',
+            align  : 'center',
+            dataIndex : '',
+            width     : '20%',
+        },{
+            header    : '分机状态',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '20%',
+        },{        
+            header    : '分机终端类型',
+            align  : 'center',
+            dataIndex : '',
+            width     : '20%',
+        }           
+]

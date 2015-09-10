@@ -1,0 +1,14 @@
+title   : " 添加失败处理",
+
+type    :   "WinType3",
+
+file    : "manualServiceFailProcessAddFormItem.xml",
+
+width:300,
+
+labelWidth:100,
+
+x:550,
+
+y:200
+

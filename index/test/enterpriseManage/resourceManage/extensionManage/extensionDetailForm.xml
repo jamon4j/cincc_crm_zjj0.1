@@ -1,0 +1,15 @@
+title   : "分机详情",
+
+type    :   "WinType2",
+
+file    : "extensionDetailFormItem.xml",
+
+width:600,
+
+labelWidth:100,
+
+x:350,
+
+y:150
+
+

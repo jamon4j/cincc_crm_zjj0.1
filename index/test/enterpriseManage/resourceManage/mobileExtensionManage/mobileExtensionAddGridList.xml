@@ -1,0 +1,23 @@
+title:"添加移动分机",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{       
+                                
+},
+
+queryfile       :"mobileExtensionAddGridQueryItem.xml",
+
+columnfile      :"mobileExtensionAddGridColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        
+    ]
+},
+
+width:800,

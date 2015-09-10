@@ -1,0 +1,46 @@
+﻿items:[
+				{ 
+					xtype:'textfield',
+					fieldLabel : '工号',
+					name:'agtId',
+					itemId:'agtId'
+				},
+				{
+					xtype: 'textfield',
+					fieldLabel: '员工姓名',
+					name:'agtName',
+					itemId:'agtName'				
+				},
+				{ 
+					xtype:'combobox',
+					fieldLabel : '班组号',
+					name:'command.agtGrpId',
+					itemId:'agtGrpId',
+					editable : true,
+					displayField:'agtGrpName',
+					valueField:'agtGrpId',
+					store:null
+				},
+				{ 
+					xtype:'combobox',
+					fieldLabel : '团队',
+					name:'vccId',
+					itemId:'vccId',
+					editable : true,
+					displayField:'vccName',
+					valueField:'vccId',
+					store:null
+				},
+				{
+					xtype:'combobox',
+					fieldLabel : '角色',
+					name:'agtRole',
+					itemId:'agtRole',
+					
+					displayField:'roleName',
+					valueField:'roleId',
+					
+					value:'全部',
+					store:null	
+				}
+]

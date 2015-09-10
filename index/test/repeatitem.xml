@@ -1,0 +1,222 @@
+﻿items:[
+            {// 行1
+              style: 'width:2px;',
+              columnWidth : 1,
+              fieldLabel:'主题内容',
+              name:'topic',
+              itemId:'topic'                  
+            },{// 行2     
+              width: 200,        
+              columnWidth : .3,  
+              fieldLabel:'来电号码',              
+              name:'callin_number',
+              itemId:'callin_number',
+              readOnly:false
+            },{          
+              columnWidth : .3,        
+              xtype:'combobox',   
+              fieldLabel:'来电归属地省',                
+              name:'province',
+              itemId:'province',
+              displayField:'city',
+              valueField:'id',
+              store:null,
+              queryMode:'remote',
+              readOnly:false,
+              editable:false,
+            },{
+              columnWidth : .3,
+              xtype:'combobox',
+              fieldLabel:'来电归属地市',
+              name:'city',
+              itemId:'city',
+              displayField:'city',
+              valueField:'id',
+              store:null,
+              queryMode:'remote',
+              readOnly:false,
+              editable:false
+            },{// 行3
+              columnWidth : .3,
+              xtype:'combobox',
+              fieldLabel:'业务类型',
+              name:'business_type',
+              itemId:'business_type',
+              emptyText: '请选择',
+              displayField : 'text',
+              valueField   : 'value',
+              value:'无'            
+            },{     
+              columnWidth : .3,       
+              xtype:'combobox',
+              fieldLabel:'彩种类型',
+              name:'lottery_type',
+              itemId:'lottery_type',
+              emptyText: '请选择',
+              displayField : 'text',
+              valueField   : 'value',
+              value:'无'
+            },{          
+              columnWidth : .3,   
+              xtype:'combobox',
+              fieldLabel:'工单类型',
+              name:'order_type',
+              itemId:'order_type',
+              emptyText: '请选择',
+              displayField : 'text',
+              valueField   : 'value',
+              value:'无'
+            },{ // 行4
+              columnWidth : .3,
+              xtype : 'radiogroup', 
+              fieldLabel : '紧急程度',
+              name:'emergency_level',
+              itemId:'emergency_level',
+              vertical: true, 
+              items: [
+                    {
+                        boxLabel  : '高',
+                        name      : 'emergency_level',
+                        inputValue: 'h',                       
+                        itemId        : 'high'
+                    }, {
+                        boxLabel  : '中',
+                        name      : 'emergency_level',
+                        inputValue: 'm',
+                        itemId        : 'middle',
+                        checked: true,
+                    }, {
+                        boxLabel  : '低',
+                        name      : 'emergency_level',
+                        inputValue: 'l',
+                        itemId        : 'low'
+                    }
+                ]
+             },{ 
+                columnWidth : .3,
+                xtype : 'radiogroup', 
+                fieldLabel : '影响程度',
+                name:'influence_level',
+                itemId:'influence_level',
+                vertical: true, 
+                items: [
+                    {
+                        boxLabel  : '高',
+                        name      : 'influence_level',
+                        inputValue: 'h',
+                        itemId        : 'high'
+                    }, {
+                        boxLabel  : '中',
+                        name      : 'influence_level',
+                        inputValue: 'm',
+                        itemId        : 'middle',
+                        checked: true,
+                    }, {
+                        boxLabel  : '低',
+                        name      : 'influence_level',
+                        inputValue: 'l',
+                        itemId        : 'low'
+                    }
+                 ]
+            },{ 
+                columnWidth : .3,
+                xtype : 'radiogroup', 
+                fieldLabel : '优先级',
+                name:'priority',
+                itemId:'priority',
+                vertical: true, 
+                items: [
+                    {
+                        boxLabel  : '高',
+                        name      : 'priority',
+                        inputValue: 'h',
+                        itemId        : 'high'
+                    }, {
+                        boxLabel  : '中',
+                        name      : 'priority',
+                        inputValue: 'm',
+                        itemId        : 'middle',
+                        checked: true,
+                    }, {
+                        boxLabel  : '低',
+                        name      : 'priority',
+                        inputValue: 'l',
+                        itemId        : 'low'
+                    }
+                 ]
+            },{// 行5
+                 columnWidth : .3,
+                 xtype      : 'radiogroup',
+                 fieldLabel : '处理状态',
+                 name:'accept_status',
+                 itemId:'accept_status',                 
+                 items: [
+                    {
+                        boxLabel  : '等待',
+                        name      : 'accept_status',
+                        inputValue: 'w',
+                        itemId        : 'wait'
+                    }, {
+                        boxLabel  : '完毕',
+                        name      : 'accept_status',
+                        inputValue: 'f',
+                        itemId        : 'finish',
+                        checked: true,
+                    }, {
+                        boxLabel  : '未处理',
+                        name      : 'accept_status',
+                        inputValue: 'u',
+                        itemId       : 'unhandle'
+                    }
+                 ]
+            },{ 
+                columnWidth : .3,
+                width:100,
+                xtype : 'radiogroup', 
+                fieldLabel : '答复需求',
+                name:'response_demanded',
+                itemId:'response_demanded',
+                vertical: true,             
+                items: [
+                    {
+                        boxLabel  : '不必',
+                        name      : 'response_demanded',
+                        inputValue: 'n',
+                        checked: true,
+                        itemId    : 'no'
+                    }, {
+                        boxLabel  : '需要',
+                        name      : 'response_demanded',
+                        inputValue: 'y',
+                        itemId    : 'yes'
+                    }
+                ]
+            },{// 行6
+              columnWidth : 1,
+              xtype : "textarea",
+              fieldLabel:'问题描述',
+              name:'content',
+              itemId:'content'                 
+            },{// 行7
+              columnWidth : .3,
+              xtype:'textfield',  
+              fieldLabel:'工单编号',              
+              name:'order_id',
+              itemId:'order_id',
+              readOnly:true               
+            },{
+              columnWidth : .3,
+              fieldLabel:'时间',                
+              name:'created_time',
+              itemId:'created_time',              
+              readOnly:true                 
+            },{
+              columnWidth : .3,
+              xtype:'textfield',
+              fieldLabel:'受理人员',
+              name:'agent_name',
+              itemId:'agent_name',
+              readOnly:true              
+            }
+]	
+

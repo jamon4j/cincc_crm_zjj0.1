@@ -1,0 +1,29 @@
+items : [{
+            header    : '人工服务标识',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '30%',
+        },{
+            header    : '服务水平阀值',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '30%',
+        },{
+            header    : '优先级',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '20%',
+        },{
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+
+            itemId : 'oper11',                                               
+            width:'15%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        }                             
+]

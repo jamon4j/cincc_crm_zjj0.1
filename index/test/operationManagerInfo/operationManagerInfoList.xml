@@ -1,0 +1,32 @@
+title:"运营管理员信息列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{
+                                             
+        oper1   : "WinControl operationManagerEnrollForm.xml",        
+
+        oper3   : "WinControl operationManagerInfoModifyForm.xml",
+
+        oper5   : "WinControl operationManagerInfoModifyPasswordForm.xml",
+        
+},
+
+queryfile       :"operationManagerInfoQueryItem.xml",
+
+columnfile      :"operationManagerInfoColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'注册',
+            iconCls: 'add_node'
+        }
+    ]
+}

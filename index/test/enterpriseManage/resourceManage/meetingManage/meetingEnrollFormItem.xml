@@ -1,0 +1,56 @@
+items:[
+        {
+          fieldLabel:'会议ID',
+          name:'corpStatus',
+          itemId:'corpStatus',
+          allowBlank:false,
+          regex: /^[A-Za-z0-9]{1,8}$/, 
+          regexText: '必须为1到8位数字或字母'                  
+        },{
+          xtype: 'displayfield',            
+          value:'需填写 1到 8 位数字或字母',                  
+        },{
+          fieldLabel:'会议标题',
+          name:'displayNumber',
+          itemId:'displayNumber',
+          allowBlank:false                
+        },{
+          xtype: 'displayfield',            
+          width: 200,                 
+        },{
+          fieldLabel:'密码',
+          name:'command.acdVccContext.userNumberLen',
+          itemId:'command.acdVccContext.userNumberLen',
+          allowBlank:false              
+        },{
+          xtype: 'displayfield',            
+          width: 200,                 
+        },{      
+          xtype:'radiogroup',
+          label:'会议状态',
+          width: 300,
+          name:'meetingStatus',
+          itemId:'meetingStatus',
+          items: [
+                {
+                    boxLabel  : '正常',
+                    inputValue: '0',
+                    checked: true,
+                }, {
+                    boxLabel  : '暂停',
+                    inputValue: '1',
+                }, {
+                    boxLabel  : '未知',
+                    inputValue: '2',
+                }
+            ],
+          allowBlank:false         
+        },{
+          xtype: 'displayfield',            
+          width: 100,                 
+        },{           
+          fieldLabel:'备注',
+          name:'command.acdVccContext.maxpNpnum',
+          itemId:'command.acdVccContext.maxpNpnum',                
+        }
+]

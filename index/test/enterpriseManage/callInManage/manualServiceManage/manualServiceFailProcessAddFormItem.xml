@@ -1,0 +1,15 @@
+items:[
+        {
+          xtype: 'combobox', 
+          fieldLabel:'人工服务失败原因',
+          name:'',
+          itemId:'corpStatus',
+          allowBlank:false                 
+        },{
+          xtype: 'combobox', 
+          fieldLabel:'处理方式：',
+          name:'',
+          itemId:'',
+          allowBlank:false                 
+        }
+]

@@ -1,0 +1,16 @@
+title   : "会议详情",
+
+type    :  "WinType2",
+
+file    : "meetingDetailFormItem.xml",
+
+width   : 400,
+
+height: 200,
+
+labelWidth: 100,
+
+x:400,
+
+y:100
+

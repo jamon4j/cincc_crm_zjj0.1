@@ -1,0 +1,21 @@
+title   : "分机注册",
+
+type    :   "ExtensionEnrollMTWin",
+
+panel:[
+                                 
+        {
+            control :   "FormControl extensionEnrollBasicInfoForm.xml",                  
+        },
+        {
+            control :   "FormControl extensionEnrollAdvancedInfoForm.xml",                     
+        }        
+],
+
+x:400,
+    
+y:80,
+
+labelWitdh:100,
+
+width:600

@@ -1,0 +1,152 @@
+ items:[
+        {           
+          fieldLabel:'服务标识',
+          name:'telephoneNumber',
+          itemId:'telephoneNumber',
+          allowBlank:false,
+          regex:/^\d{1,10}$/,
+          regexText:'须填写1到10位数字'            
+        },{
+          xtype: 'displayfield',
+          name:'telephoneNumberBlank',
+          itemId:'telephoneNumberBlank',
+          width: 250, 
+          value:'须填写1到10位数字',                  
+        },{
+          fieldLabel:'服务名称',
+          name:'startTelephoneNumber',
+          itemId:'startTelephoneNumber',
+          allowBlank:false            
+        },{
+          xtype: 'displayfield',
+          width: 250,                
+        },{      
+          xtype:'radiogroup',
+          label:'弹屏内容',
+          width: 200,
+          name:'popWinCnt',
+          itemId:'popWinCnt',
+          items: [
+                {
+                    boxLabel  : '工单',
+                    inputValue: '0',
+                    checked: true,
+                }, {
+                    boxLabel  : '问卷',
+                    inputValue: '1',
+                }
+            ],
+          allowBlank:false         
+        },{
+          xtype: 'displayfield',
+          width: 250,                
+        },{   
+          xtype:'combobox',
+          fieldLabel:'工单列表',
+          name:'orderList',
+          itemId:'orderList',
+          allowBlank:false                   
+        },{   
+          xtype:'combobox',
+          fieldLabel:'问卷列表',
+          name:'qtList',
+          itemId:'qtList',
+          hidden:true                
+        },{   
+          xtype:'combobox',
+          fieldLabel:'分配策略',
+          name:'',
+          itemId:'',
+          allowBlank:false                    
+        },{      
+          xtype:'radiogroup',
+          label:'优先接到上次接听的座席',
+          labelWidth:150,
+          width: 300,
+          name:'priorReceiveLastSeat',
+          itemId:'priorReceiveLastSeat',
+          items: [
+                {
+                    boxLabel  : '否',
+                    inputValue: '0',
+                    checked: true,
+                }, {
+                    boxLabel  : '是',
+                    inputValue: '1',
+                }
+            ],
+          allowBlank:false         
+        },{
+          xtype: 'displayfield',
+          width: 250,                
+        },{   
+          xtype:'combobox',
+          fieldLabel:'组合测试',
+          name:'conbinationTest',
+          itemId:'conbinationTest',
+          hidden:true                  
+        },{
+          xtype: 'displayfield',
+          name:'conbinationTestBlank',
+          itemId:'conbinationTestBlank',
+          width: 150, 
+          hidden:true                      
+        },{   
+          fieldLabel:'排队长度',
+          name:'',
+          itemId:'',
+          allowBlank:false,
+          value:10                  
+        },{   
+          fieldLabel:'排队超时时间',
+          name:'',
+          itemId:'',
+          allowBlank:false,
+          value:30                           
+        },{   
+          fieldLabel:'总排队时间',
+          name:'',
+          itemId:'',
+          allowBlank:false,
+          value:90                         
+        },{   
+          xtype:'combobox',
+          fieldLabel:'服务日程',
+          name:'',
+          itemId:''                  
+        },{   
+          xtype:'combobox',
+          fieldLabel:'报工号音',
+          name:'',
+          itemId:'',
+          allowBlank:false                   
+        },{
+          xtype: 'displayfield',
+          width: 250,                
+        },{   
+            xtype:'itemselector',
+            fieldLabel:'节假日',
+            width: 400,
+            name:'holiday',
+            itemId:'holiday',
+            displayField: 'text',
+            valueField: 'value',
+            value: ['1', '2'],
+            storeClass: 'Extui.Store.HolidayStore',
+            msgTarget: 'side',  
+            fromTitle : '提供服务的节假日',
+            toTitle : '不提供服务的节假日' 
+        },{
+          xtype: 'displayfield',
+          width: 150,                
+        }
+],
+
+event:{
+    popWinCnt:
+    {
+        0:"visable(orderList,true);visable(orderListBlank,true);visable(qtList,false);visable(qtListBlank,false)",
+
+        1:"visable(orderList,false);visable(orderListBlank,false);visable(qtList,true);visable(qtListBlank,true);",
+    }
+}

@@ -1,0 +1,11 @@
+title   : "坐席管理",
+
+type    :   "WinType4", 
+
+file    : "manualServiceAgentManageGridItem.xml",
+
+width:1000,
+
+x:200,
+
+y:100,

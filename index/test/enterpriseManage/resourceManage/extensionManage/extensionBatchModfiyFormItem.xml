@@ -1,0 +1,96 @@
+ items:[
+            {   
+              xtype:'combobox',
+              fieldLabel:'分机类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'媒体类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'拨号信息',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'分机终端类型',
+              name:'',
+              itemId:'',
+              allowBlank:false                   
+            },{   
+              xtype:'combobox',
+              fieldLabel:'SIP服务器',
+              name:'',
+              itemId:'',
+              allowBlank:false        
+            },{   
+              fieldLabel:'分机显示号',
+              name:'',
+              itemId:''                 
+            },{   
+              fieldLabel:'无应答时长',
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:0                   
+            },{
+              xtype: 'displayfield',            
+              value:'0到 90之间的数字（单位秒）',
+              width: 170                  
+            },{   
+              fieldLabel:'归属MS组号',
+              name:'',
+              itemId:''                  
+            },{
+              xtype: 'displayfield',            
+              width: 170                  
+            },{   
+              fieldLabel:'路由组',
+              name:'',
+              itemId:'',
+              allowBlank:false,
+              value:0                   
+            },{
+              xtype: 'displayfield',            
+              value:'须填写大于100000的数字',
+              width: 170                  
+            },{
+              fieldLabel:'无应答前转号码',
+              name:'',
+              itemId:''
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            },{           
+              fieldLabel:'遇忙前转号码',
+              name:'',
+              itemId:''               
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            },{
+              fieldLabel:'无条件前转号码',
+              name:'',
+              itemId:''
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            },{
+              fieldLabel:'不在线呼叫转移号码',
+              name:'',
+              itemId:''
+            },{
+              xtype:'combobox',
+              name:'',
+              itemId:''
+            }
+],

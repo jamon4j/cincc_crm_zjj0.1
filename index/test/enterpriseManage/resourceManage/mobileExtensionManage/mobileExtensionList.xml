@@ -1,0 +1,31 @@
+title:"移动分机列表",
+
+table:"kkkk",
+
+type:"GridTypeNoQuery",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{       
+                                
+        oper1   : "WinControl mobileExtensionAddGrid.xml",        
+
+},
+
+columnfile      :"mobileExtensionColumnsItem.xml",
+
+toolbarCfg:{
+    items:[                     
+        {
+            xtype: 'button',
+            itemId: 'oper1',
+            text:'添加移动分机',
+            iconCls: 'add_node'
+        },{
+            xtype: 'button',
+            itemId: 'oper2',
+            text:'批量删除',
+            iconCls: 'delete_node'
+        },
+    ]
+}

@@ -1,0 +1,6 @@
+items:[
+    {
+        xtype:'gridcontrol',
+        grid:"test/enterpriseManage/callInManage/manualServiceManage/manualServiceAgentManageAddAgentGroupGridList.xml"
+    }
+]

@@ -1,0 +1,92 @@
+items : [{
+            header    : '人工服务标识',
+            align     : 'center',
+            dataIndex : 'tr_corp_id',
+            width     : '10%',
+        },{
+            header    : '标识长号',
+            align     : 'center',
+            dataIndex : 'vccName',
+            width     : '15%',
+        },{
+            header    : '人工服务名称',
+            align  : 'center',
+            dataIndex : 'displayNumber',
+            width     : '10%',
+        },{
+            header    : '注册时间',
+            align  : 'center',
+            dataIndex : 'tr_corp_status',
+            width     : '10%',
+        },{
+            header    : '失败处理',
+            xtype  : 'actioncolumn',
+            align  : 'center',
+            dataIndex : '',
+            itemId : 'oper6',
+            width     : '8%',
+            items  : [{
+                iconCls : 'ques_win',
+                tooltip : ''  
+            }]
+        },{
+            header    : 'SL阀值分配',
+            xtype  : 'actioncolumn',
+            align  : 'center',
+            dataIndex : '',
+            itemId : 'oper8',
+            width     : '8%',
+            items  : [{
+                iconCls : 'wrench_orange',
+                tooltip : ''  
+            }]
+        },{
+            header    : '坐席管理',
+            xtype  : 'actioncolumn',
+            align  : 'center',
+            dataIndex : '',
+            itemId : 'oper7',
+            width     : '8%',
+            items  : [{
+                iconCls : 'report_usrEdit',
+                tooltip : ''  
+            }]
+        },{
+            header    : '坐席状态',
+            xtype  : 'actioncolumn',
+            align  : 'center',
+            dataIndex : '',
+            itemId : 'oper9',
+            width     : '8%',
+            items  : [{
+                iconCls : 'report_usrList',
+                tooltip : ''  
+            }]
+        },{
+            header : '修改',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+            
+            itemId : 'oper3',
+                                                                                
+            width:'11%',
+
+            items  : [{
+                iconCls : 'pencil_icon',
+                tooltip : '修改'  
+            }]
+        },{
+            header : '删除',
+            align  : 'center',
+            xtype  : 'actioncolumn',
+                                                                                
+            itemId : 'oper5',
+                                                                                
+            width     : '10%',
+    
+            items  : [{
+                iconCls : 'delete_node',
+                tooltip : '删除'
+            }]  
+        }                               
+]

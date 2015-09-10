@@ -1,0 +1,105 @@
+items:[
+        {      
+          xtype:'radiogroup',
+          label:'注册类型',
+          width:300,
+          name:'regType',
+          itemId:'regType',
+          items: [
+                {
+                    boxLabel  : '单个注册',
+                    inputValue: '0',
+                    checked: true,
+                }, {
+                    boxLabel  : '批量注册',
+                    inputValue: '1',
+                }
+            ],
+          allowBlank:false         
+        },{
+          xtype: 'displayfield',  
+          width:200,
+          name:'',
+          itemId:'',                           
+        },{
+          fieldLabel:'话路号码',
+          name:'telephoneNumber',
+          itemId:'telephoneNumber',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                 
+        },{
+          xtype: 'displayfield',  
+          name:'telephoneNumberBlank',
+          itemId:'telephoneNumberBlank',          
+          value:'需填写1到？位数字,不能与已有座席工号或者分机号重复!',                  
+        },{
+          fieldLabel:'起始话路号码',
+          name:'startTelephoneNumber',
+          itemId:'startTelephoneNumber',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字',
+          hidden:true                 
+        },{
+          xtype: 'displayfield',
+          name:'startTelephoneNumberBlank',
+          itemId:'startTelephoneNumberBlank',            
+          value:'需填写1到？位数字,不能与已有座席工号或者分机号重复!',
+          hidden:true                 
+        },{
+          fieldLabel:'批量注册数量',
+          name:'batchRegNumber',
+          itemId:'batchRegNumber',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字',
+          hidden:true                 
+        },{
+          xtype: 'displayfield',  
+          width:200,
+          name:'batchRegNumberBlank',
+          itemId:'batchRegNumberBlank',
+          hidden:true                           
+        },{
+          fieldLabel:'媒体类型',
+          name:'',
+          itemId:'',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                  
+        },{
+          xtype: 'displayfield',  
+          width:200,
+          name:'',
+          itemId:'',                           
+        },{
+          fieldLabel:'拨号信息',
+          name:'',
+          itemId:'',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                 
+        },{
+          xtype: 'displayfield',  
+          width:200,
+          name:'',
+          itemId:'',                           
+        },{
+          fieldLabel:'归属MS组号',
+          name:'',
+          itemId:'',
+          allowBlank:false,
+          regex: /^\d{6,18}$/, 
+          regexText: '必须为6到18位数字'                  
+        }
+],
+
+event:{
+    regType:
+    {
+        0:"visable(startTelephoneNumber,false);visable(startTelephoneNumberBlank,false);visable(TelephoneNumber,true);visable(TelephoneNumberBlank,true);visable(batchRegNumber,false);visable(batchRegNumberBlank,false);",
+
+        1:"visable(startTelephoneNumber,true);visable(startTelephoneNumberBlank,true);visable(TelephoneNumber,false);visable(TelephoneNumberBlank,false);visable(batchRegNumber,true);visable(batchRegNumberBlank,true);"
+    }
+}

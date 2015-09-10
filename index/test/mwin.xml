@@ -1,0 +1,29 @@
+﻿title	:"this is demo",
+
+type	:"MTWin",
+
+panel:[
+							
+    	{
+				control	:	"GridControl grid.xml",		
+				
+				title: "tab的Grid",
+				
+				init		:{
+						name	:2,
+						age		:12
+						}
+			},
+			
+    	{
+				control	:	"FormControl FormType item.xml",		
+				
+			 title: "tab的Form",
+				
+				init		:{
+						name	:2,
+						age		:12
+						}
+			}
+		
+]

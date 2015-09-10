@@ -1,0 +1,28 @@
+items:[
+                { 
+                    xtype:'textfield',
+                    fieldLabel : '企业标识',
+                    name:'agtId',
+                    itemId:'agtId',
+                    columnWidth:.2,
+                    regex: /^\d{6}$/,
+                    regexText: '必须为6位数字' 
+                },
+                {
+                    xtype: 'textfield',
+                    fieldLabel: '企业名称',
+                    name:'agtName',
+                    itemId:'agtName',
+                    columnWidth:.2,                
+                },
+                { 
+                    xtype: 'textfield',
+                    fieldLabel : '显示号码',
+                    name:'command.agtGrpId',
+                    itemId:'agtGrpId',
+                    editable : true,
+                    displayField:'agtGrpName',
+                    valueField:'agtGrpId',
+                    columnWidth:.2,
+                }
+]

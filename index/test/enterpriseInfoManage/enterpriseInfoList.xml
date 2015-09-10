@@ -1,0 +1,23 @@
+title:"企业信息列表",
+
+table:"kkkk",
+
+type:"GridType2",
+
+storeClass:"Extui.Store.EnterpriseInfoStore",
+
+action:{
+        
+        db      : "WinControl enterpriseInfoDetailForm.xml",        
+                                
+        oper1   : "MWinControl enterpriseEnrollForm.xml",        
+        
+        oper3   : "WinControl enterpriseInfoModifyForm.xml",
+
+        oper5   : "WinControl win.xml",
+        
+},
+
+queryfile       :"enterpriseInfoQueryItem.xml",
+
+columnfile      :"enterpriseInfoColumnsItem.xml"

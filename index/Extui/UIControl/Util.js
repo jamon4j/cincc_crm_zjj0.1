@@ -1,0 +1,186 @@
+﻿Ext.define('Extui.UIControl.Util', {
+	
+	singleton: true,
+			
+	get:function(url,callback,scope){
+
+		var me = this;
+
+		var conn = new Ext.data.Connection();
+
+		conn.request({
+
+			scope: me,
+			
+			async: false,
+
+			url  : url,           
+
+			callbackKey: 'jsoncallback',
+
+			success: function (text) {
+												
+				var object = Ext.decode("{" + text.responseText + "}");		
+
+				if(callback) {
+
+						callback.call(scope,object);
+									
+				};
+			},
+			
+			failure: function (result) {
+					console.info(result, 'UI Control load xml error', 2);
+					Ext.Msg.alert('提示', 'UI control 加载xml失败');
+			}
+			
+		});
+		
+	},
+
+	getLoadPath:function(loadfile){
+		
+		console.info("getLoadpath: " + loadfile);
+			
+		if( (typeof(loadfile) == "undefined") || (loadfile == null) )return "";
+		
+		var tmp = loadfile;	
+		var res;
+		
+		for(var i=tmp.length;i>=0;i--){
+			
+			if( tmp[i] == '/' )break;
+			
+		};
+		
+		if( i<0 )res = "";
+		else
+			res = tmp.substring(0,i+1);
+			
+		return res;
+		
+	},
+	
+	addLoadPath:function(ofile,ppath){
+		
+		var itemfile =ofile;
+		
+		var itempath = this.getLoadPath(ofile);
+
+		if( itempath == "" ) itemfile = ppath + ofile;
+		
+		console.info("add loadpath:" + itemfile);
+			
+		return itemfile;
+			
+	},
+
+		
+	initAction:function(panel,ac,scope){
+		
+			var but = null;
+						
+			but = panel.down("button#cancel");
+			if( but != null )
+				but.on("click",	scope[ac.cancel],	scope);	
+				
+			but = panel.down("button#save");
+			if( but != null )
+					but.on("click",	scope[ac.save],	scope);
+					
+			but = panel.down("button#savenoret");
+			if( but != null )
+					but.on("click",	scope[ac.savenoret],	scope);
+							
+			but = panel.down("button#modify");
+			if( but != null )
+					but.on("click",	scope[ac.modify],	scope);
+		
+			but = panel.down("button#query");
+			if( but != null )
+					but.on("click",	scope[ac.query],	scope);
+					
+			but = panel.down("button#notify");
+			if( but != null )
+					but.on("click",	scope[ac.notify],	scope);
+					
+			but = panel.down("button#transfer");
+			if( but != null )
+					but.on("click",	scope[ac.transfer],	scope);
+					
+			but = panel.down("button#sendsms");
+			if( but != null )
+					but.on("click",	scope[ac.sendsms],	scope);
+					
+	},
+	
+	fillFormByData: function(form, obj) {
+		
+		var data = obj;
+		
+		
+		Ext.Array.each(form.query('checkboxgroup'), function(cg) {
+			if('checkboxgroup' == cg.xtype)
+				data[cg.name] = data[cg.name] ? data[cg.name].split('|') : null;
+		});
+			
+		form.getForm().setValues(data);
+		
+		Ext.Array.each(form.query('radiogroup'), function(rg) {
+			var rgObj = {};
+			rgObj[rg.name] = data[rg.name];
+			rg.setValue(rgObj);
+		}, this);
+	
+	},	
+
+	uicontrolid:0,
+	
+	createItemId:function(tag){
+		
+		var t = {};
+		
+		var tag = tag || "other";
+		
+		t.itemId = tag + this.uicontrolid;
+		t.alias = tag + this.uicontrolid;
+		
+		this.uicontrolid++;
+		
+		return t;
+	},
+		
+	getControlParameter:function(str){
+		
+			var v = str.split(" ");
+			
+			var o = {};
+			
+			if( v.length < 2 ){
+				
+				console.info("getControlParameter is error:"+ str);
+				return o;
+			}
+			
+			if( v.length == 2 ){
+				
+				o.control = v[0];
+				
+				o.file    = v[1];
+				
+				o.arguments = null;
+				
+			}else
+			{
+				o.control = v[0];
+				
+				o.file = null;
+				
+				o.arguments = v;	
+			}
+			
+			return o;
+	}
+	
+	
+});

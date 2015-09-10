@@ -1,0 +1,11 @@
+title   : "SL阀值分配",
+
+type    :   "WinType5",
+
+file    : "manualServiceSLThresholdAllotGridItem.xml",
+
+width:600,
+
+x:350,
+
+y:100

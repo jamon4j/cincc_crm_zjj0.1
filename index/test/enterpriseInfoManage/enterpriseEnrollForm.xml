@@ -1,0 +1,19 @@
+title   : "企业信息注册",
+
+type    :   "MTWin1",
+
+panel:[                                
+        {
+            control :   "FormControl enterpriseEnrollBasicInfoForm.xml",                                   
+        },
+        {
+            control :   "FormControl enterpriseResourceConfigForm.xml",                                  
+        },
+        {
+            control :   "FormControl enterpriseManagerInfoForm.xml",                      
+        }        
+],
+
+x:400,
+y:150,
+width:500

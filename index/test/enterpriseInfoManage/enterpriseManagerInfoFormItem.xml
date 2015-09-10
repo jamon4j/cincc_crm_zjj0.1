@@ -1,0 +1,30 @@
+items:[
+            {// 行19             
+              xtype:'combobox',
+              fieldLabel:'管理员类型',
+              name:'command.corpAdminInfo.adminCtx.roleId',
+              itemId:'command.corpAdminInfo.adminCtx.roleId',
+              allowBlank:false                   
+            },{// 行20              
+              fieldLabel:'登陆用户名',
+              name:'command.corpAdminInfo.adminCtx.loginName',
+              itemId:'command.corpAdminInfo.adminCtx.loginName',
+              value:'admin',
+              allowBlank:false                   
+            },{// 行21             
+              fieldLabel:'登陆密码',
+              name:'command.corpAdminInfo.adminCtx.loginPwd',
+              itemId:'command.corpAdminInfo.adminCtx.loginPwd',
+              value:'cinteam123',
+              allowBlank:false                 
+            },{
+              xtype: 'displayfield',            
+              value:'默认密码为cinteam123',                  
+            },{// 行22             
+              fieldLabel:'密码确认',
+              name:'command.corpAdminInfo.adminCtx.repeatPwd',
+              itemId:'command.corpAdminInfo.adminCtx.repeatPwd',
+              value:'cinteam123',
+              allowBlank:false                   
+            }
+]

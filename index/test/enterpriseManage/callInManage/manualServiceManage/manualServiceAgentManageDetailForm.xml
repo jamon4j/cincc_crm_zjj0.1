@@ -1,0 +1,15 @@
+title   : "座席信息",
+
+type    :   "WinType2",
+
+file    : "manualServiceAgentManageDetailFormItem.xml",
+
+labelWidth:80,
+
+width:300,
+
+height:200,
+
+x:500,
+
+y:120

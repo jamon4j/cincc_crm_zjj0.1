@@ -1,0 +1,14 @@
+title   : " IVR服务修改",
+
+type    :   "WinType3",
+
+file    : "ivrServiceEnrollFormItem.xml",
+
+width:450,
+
+labelWidth:80,
+
+x:450,
+
+y:150
+

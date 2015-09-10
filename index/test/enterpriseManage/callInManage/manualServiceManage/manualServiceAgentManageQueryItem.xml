@@ -1,0 +1,35 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '姓名',
+            name:'',
+            itemId:'',
+            columnWidth:.2
+        },{ 
+            xtype:'combobox',
+            fieldLabel : '状态',
+            name:'',
+            itemId:'',
+            columnWidth:.2
+        },{ 
+            xtype:'textfield',
+            fieldLabel:'员工标识 从',
+            labelWidth:110,
+            name:'',
+            itemId:'',
+            columnWidth:.2
+        },{ 
+            xtype:'textfield',
+            fieldLabel:'到',
+            labelWidth:20,
+            name:'',
+            itemId:'',
+            columnWidth:.15,        
+        },{ 
+            xtype:'textarea',
+            fieldLabel : '多员工标识（，分割）',
+            name:'',
+            itemId:'',
+            columnWidth:.2
+        }  
+]

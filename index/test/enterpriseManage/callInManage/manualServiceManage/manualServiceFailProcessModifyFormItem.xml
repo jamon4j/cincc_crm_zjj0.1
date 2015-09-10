@@ -1,0 +1,20 @@
+items:[
+        {
+          xtype: 'combobox', 
+          fieldLabel:'错误原因',
+          name:'',
+          itemId:'corpStatus',
+          allowBlank:false                 
+        },{
+          xtype: 'combobox', 
+          fieldLabel:'原因处理方式',
+          name:'',
+          itemId:'',
+          allowBlank:false                 
+        },{
+          fieldLabel:'备注',
+          name:'',
+          itemId:'',
+          allowBlank:false                 
+        }
+]

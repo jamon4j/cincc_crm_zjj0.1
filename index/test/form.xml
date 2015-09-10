@@ -1,0 +1,12 @@
+﻿
+type	:	"FormType",
+
+file	: "./test/item.xml",
+
+action:{
+
+		save	:	"saveAC",
+		cancel	: "cancelAC",
+		modify	: "modifyAC"
+
+}

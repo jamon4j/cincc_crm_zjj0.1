@@ -1,0 +1,44 @@
+items:[
+        {        
+          fieldLabel:'所属企业',
+          name:'tr_corp_id',
+          itemId:'tr_corp_id'                  
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{  
+          xtype:'combobox',           
+          fieldLabel:'管理员类型',
+          name:'vccName',
+          itemId:'vccName'                  
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{
+          fieldLabel:'登陆用户名',
+          name:'corpStatus',
+          itemId:'corpStatus'                  
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{            
+          fieldLabel:'姓名',
+          name:'',
+          itemId:'',                
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{           
+          fieldLabel:'联系电话',
+          name:'command.acdVccContext.maxpNpnum',
+          itemId:'command.acdVccContext.maxpNpnum',                
+        },{
+          xtype: 'displayfield',            
+          width:200                  
+        },{            
+          fieldLabel:'联系邮件',
+          name:'command.ctiVccContext.ivrMax',
+          itemId:'command.ctiVccContext.ivrMax',
+          value:'0'                  
+        }
+]

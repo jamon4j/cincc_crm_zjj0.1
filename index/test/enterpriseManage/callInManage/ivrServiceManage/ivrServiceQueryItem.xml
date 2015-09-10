@@ -1,0 +1,17 @@
+items:[
+        { 
+            xtype:'textfield',
+            fieldLabel : '服务标识',
+            name:'',
+            itemId:'',
+            columnWidth:.2,
+            regex: /^\d{6}$/,
+            regexText: '必须为6位数字'
+        },{
+            xtype: 'textfield',
+            fieldLabel: '服务名称',
+            name:'',
+            itemId:'',
+            columnWidth:.2,                
+        }
+]
